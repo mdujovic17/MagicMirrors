@@ -1,0 +1,7 @@
+{
+  "teleport": {
+    "category": "player",
+    "subtitle": "magicmirror.subtitle.teleport",
+    "sounds": [ "magicmirror:teleport" ]
+  }
+}
