@@ -2,6 +2,6 @@
     "pack": {
         "description": "Magic Mirror Resources",
         "pack_format": 4,
-        "_comment": "Resource package for Magic Mirror Mod"
+        "_comment": "Resources used for Magic Mirror"
     }
 }
