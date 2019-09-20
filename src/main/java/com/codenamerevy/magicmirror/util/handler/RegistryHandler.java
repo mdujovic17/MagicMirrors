@@ -1,14 +1,11 @@
 package com.codenamerevy.magicmirror.util.handler;
 
 import com.codenamerevy.magicmirror.init.ItemInit;
-import com.codenamerevy.magicmirror.init.SoundInit;
 import com.codenamerevy.magicmirror.util.Reference;
 import net.minecraft.item.Item;
-import net.minecraft.util.SoundEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RegistryHandler
@@ -23,14 +20,14 @@ public class RegistryHandler
         Reference.LOGGER.info("Registered item(s)!");
     }
 
-    @SubscribeEvent
+    /**@SubscribeEvent
     public void onRegisterSounds(RegistryEvent.Register<SoundEvent> event)
     {
-        IForgeRegistry<SoundEvent> registry = event.getRegistry();
         for(SoundEvent sound : SoundInit.SOUNDS)
         {
-            registry.register(sound);
+            event.getRegistry().register(sound);
         }
         Reference.LOGGER.info("Registered sound(s)!");
     }
+    **/
 }

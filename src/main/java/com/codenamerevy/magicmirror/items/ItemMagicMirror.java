@@ -2,7 +2,6 @@ package com.codenamerevy.magicmirror.items;
 
 import com.codenamerevy.magicmirror.init.ItemInit;
 import com.codenamerevy.magicmirror.init.SoundInit;
-import com.codenamerevy.magicmirror.util.Reference;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -54,10 +53,26 @@ public class ItemMagicMirror extends Item {
             PlayerEntity player = (PlayerEntity) entity;
             BlockPos bedPos = player.getBedLocation(player.dimension);
             BlockPos backPos = bedPos;
+            BlockPos currentPos = player.getPosition();
 
+            if(!world.dimension.isSurfaceWorld())
+            {
+                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.power"), true);
+                world.playSound(null,
+                        currentPos.getX(),
+                        currentPos.getY(),
+                        currentPos.getZ(),
+                        SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
+                return stack;
+            }
             if (bedPos == null)
             {
                 player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
+                world.playSound(null,
+                        currentPos.getX(),
+                        currentPos.getY(),
+                        currentPos.getZ(),
+                        SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
                 return stack;
             }
 
@@ -65,11 +80,17 @@ public class ItemMagicMirror extends Item {
             {
                 entity.stopRiding();
             }
-            entity.setPositionAndUpdate(backPos.getX() + 0.5f, backPos.getY() + 0.6f, backPos.getZ() + 0.5f);
+            entity.setPositionAndUpdate(
+                    backPos.getX() + 0.5f,
+                    backPos.getY() + 0.6f,
+                    backPos.getZ() + 0.5f);
             entity.fallDistance = 0;
 
-            world.playSound(null, backPos.getX(), backPos.getY(), backPos.getZ(), SoundInit.SOUND_TELEPORT, SoundCategory.PLAYERS, 1f, 1f);
-            Reference.LOGGER.info("Playing teleport.ogg");
+            world.playSound(null,
+                    backPos.getX(),
+                    backPos.getY(),
+                    backPos.getZ(),
+                    SoundInit.TELEPORT, SoundCategory.PLAYERS, 1f, 1f);
         }
         return stack;
     }

@@ -1,4 +1,8 @@
 {
   "item.magicmirror.magic_mirror": "Magic Mirror",
-  "chat.magicmirror.bednotfound": "Bed not found! Make sure you sleep in the bed before you can use the mirror!"
+  "chat.magicmirror.bednotfound": "Bed not found! Make sure you sleep in the bed before you can use the mirror!",
+  "chat.magicmirror.power": "This mirror is not powerful enough for cross-dimension travel!",
+  "chat.magicmirror.nether": "This mirror is not powerful enough to travel trough Nether!",
+  "subtitle.magicmirror.teleport": "Teleport",
+  "subtitle.magicmirror.mirror_discharge": "Mirror Discharge"
 }

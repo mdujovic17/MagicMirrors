@@ -3,5 +3,10 @@
     "category": "player",
     "subtitle": "magicmirror.subtitle.teleport",
     "sounds": [ "magicmirror:teleport" ]
+  },
+  "mirror_discharge": {
+    "category": "player,",
+    "subtitle": "magicmirror.subtitle.mirror_discharge",
+    "sounds": [ "magicmirror:mirror_discharge" ]
   }
 }
