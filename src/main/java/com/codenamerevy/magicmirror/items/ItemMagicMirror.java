@@ -2,6 +2,7 @@ package com.codenamerevy.magicmirror.items;
 
 import com.codenamerevy.magicmirror.init.ItemInit;
 import com.codenamerevy.magicmirror.init.SoundInit;
+import com.codenamerevy.magicmirror.util.ModRarity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -10,6 +11,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraft.world.dimension.DimensionType;
 
 import java.util.Random;
 
@@ -57,22 +59,22 @@ public class ItemMagicMirror extends Item {
 
             if(!world.dimension.isSurfaceWorld())
             {
-                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.power"), true);
                 world.playSound(null,
                         currentPos.getX(),
                         currentPos.getY(),
                         currentPos.getZ(),
                         SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
+                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.power"), true);
                 return stack;
             }
             if (bedPos == null)
             {
-                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
                 world.playSound(null,
                         currentPos.getX(),
                         currentPos.getY(),
                         currentPos.getZ(),
                         SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
+                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
                 return stack;
             }
 
@@ -106,7 +108,6 @@ public class ItemMagicMirror extends Item {
     {
         return duration;
     }
-
 
     @Override
     public Rarity getRarity(ItemStack stack) {

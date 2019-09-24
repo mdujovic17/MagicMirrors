@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0.0.3'
+version = '1.0.1.0'
 group = 'com.codenamerevy.magicmirror' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'magicmirror'
 
@@ -115,7 +115,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "MagicMirror",
+            "Specification-Title": "MagicMirrors",
             "Specification-Vendor": "CodenameRevy",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,

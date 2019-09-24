@@ -19,15 +19,4 @@ public class RegistryHandler
         }
         Reference.LOGGER.info("Registered item(s)!");
     }
-
-    /**@SubscribeEvent
-    public void onRegisterSounds(RegistryEvent.Register<SoundEvent> event)
-    {
-        for(SoundEvent sound : SoundInit.SOUNDS)
-        {
-            event.getRegistry().register(sound);
-        }
-        Reference.LOGGER.info("Registered sound(s)!");
-    }
-    **/
 }

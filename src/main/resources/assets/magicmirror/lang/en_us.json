@@ -1,8 +1,16 @@
 {
   "item.magicmirror.magic_mirror": "Magic Mirror",
+  "item.magicmirror.ice_mirror": "Mirror of the Yeti",
+
+  "item.magicmirror.dimensional_mirror": "Dimensional Mirror",
+  "item.magicmirror.dimensional_mirror_ice": "Mirror of the Yeti (Dimensional)",
+
   "chat.magicmirror.bednotfound": "Bed not found! Make sure you sleep in the bed before you can use the mirror!",
   "chat.magicmirror.power": "This mirror is not powerful enough for cross-dimension travel!",
   "chat.magicmirror.nether": "This mirror is not powerful enough to travel trough Nether!",
+  "chat.magicmirror.dimension": "Jumping to Overworld...",
+  "chat.magicmirror.teleport": "Teleporting to your bed...",
+
   "subtitle.magicmirror.teleport": "Teleport",
   "subtitle.magicmirror.mirror_discharge": "Mirror Discharge"
 }
