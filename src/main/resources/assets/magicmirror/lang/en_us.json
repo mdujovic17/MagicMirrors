@@ -12,5 +12,7 @@
   "chat.magicmirror.teleport": "Teleporting to your bed...",
 
   "subtitle.magicmirror.teleport": "Teleport",
-  "subtitle.magicmirror.mirror_discharge": "Mirror Discharge"
+  "subtitle.magicmirror.mirror_discharge": "Mirror Discharge",
+
+  "itemGroup.magic_mirrors": "Magic Mirrors"
 }
