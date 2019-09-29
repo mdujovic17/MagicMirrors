@@ -10,8 +10,13 @@
           "weight": 5
         },
         {
+          "type": "item",
+          "name": "magicmirror:dimension_crystal",
+          "weight": 10
+        },
+        {
           "type": "empty",
-          "weight": 95
+          "weight": 85
         }
       ]
     }]

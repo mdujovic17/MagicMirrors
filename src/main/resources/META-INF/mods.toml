@@ -4,14 +4,29 @@ issueTrackerURL="https://github.com/CodenameRevy/-1.14.4-MagicMirror/issues"
 
 [[mods]]
 modId="magicmirror"
-version="1.0.1.1"
+version="1.0.2.0"
 displayName="Magic Mirrors"
 displayURL="https://github.com/CodenameRevy/-1.14.4-MagicMirror"
 logoFile="logo.png"
 #credits="" #optional
 authors="CodenameRevy"
 description='''
-This mod attempts to mimic Terraria's Magic Mirror in Minecraft!
+Magic Mirror mod adds several new items that are used to teleport you to your bed location almost instantly!
+
+Update 1.0.2.0 changelog:
+
+-Added Mirror skins that can be found around the world:
+    -Mirror of the Yeti (igloos and snowy houses);
+    -Mirror of the Pharaoh (desert pyramids);
+    -Nature's Reflection (jungle temples);
+    -Neptune's Mirror (buried treasure, shipwrecks and ocean monuments);
+    -Librarian's Magnifier (stronghold library);
+    -Cartographer's Speculum (cartographer's house in villages);
+    -Reflective Dragonstone (end city).
+
+-Added "Dimension Crystal" item that is used for crafting dimensiona mirrors:
+    -Each mirror has its dimensional counterpart, exepct Reflective Dragonstone (its already dimensional)
+    -Can be found in Nether Fortress
 '''
 
 [[dependencies.magicmirror]]

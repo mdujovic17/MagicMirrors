@@ -52,9 +52,9 @@ public final class LootHandler
                 //case "village_desert_house":
                 //case "village_plains_house":
                 //case "village_savanna_house":
-                case "village_snowy_house":
+                case "village_snowy_house":             evt.getTable().addPool(getInjectPool(file)); Reference.LOGGER.info(file + "Loot Table Loaded!"); break;
                 //case "village_taiga_house":
-                case "woodland_mansion":      evt.getTable().addPool(getInjectPool(file)); Reference.LOGGER.info(file + "Loot Table Loaded!"); break;
+                //case "woodland_mansion":
                 default: break;
             }
         }

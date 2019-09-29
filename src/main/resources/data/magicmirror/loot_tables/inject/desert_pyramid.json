@@ -7,7 +7,12 @@
       {
         "type": "item",
         "name": "magicmirror:magic_mirror",
-        "weight": 5
+        "weight": 1
+      },
+      {
+        "type": "item",
+        "name": "magicmirror:magic_mirror_desert",
+        "weight": 4
       },
       {
         "type": "empty",

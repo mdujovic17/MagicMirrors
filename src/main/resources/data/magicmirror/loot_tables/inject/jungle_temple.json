@@ -10,6 +10,11 @@
           "weight": 5
         },
         {
+          "type": "item",
+          "name": "magicmirror:magic_mirror_jungle",
+          "weight": 5
+        },
+        {
           "type": "empty",
           "weight": 95
         }

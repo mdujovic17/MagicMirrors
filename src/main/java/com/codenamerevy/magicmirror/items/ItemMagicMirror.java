@@ -39,11 +39,7 @@ public class ItemMagicMirror extends Item {
         Random rand = entity.world.rand;
         for (int i = 0; i < 45; i++)
         {
-            entity.world.addParticle(ParticleTypes.DRAGON_BREATH,
-                    entity.posX + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2,
-                    entity.posY + rand.nextFloat() * 3 - 2,
-                    entity.posZ + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2,
-                    0, 0.105D, 0);
+            entity.world.addParticle(ParticleTypes.DRAGON_BREATH, entity.posX + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, entity.posY + rand.nextFloat() * 3 - 2, entity.posZ + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, 0, 0.105D, 0);
         }
     }
 
@@ -59,21 +55,13 @@ public class ItemMagicMirror extends Item {
 
             if(!world.dimension.isSurfaceWorld())
             {
-                world.playSound(null,
-                        currentPos.getX(),
-                        currentPos.getY(),
-                        currentPos.getZ(),
-                        SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
+                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
                 player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.power"), true);
                 return stack;
             }
             if (bedPos == null)
             {
-                world.playSound(null,
-                        currentPos.getX(),
-                        currentPos.getY(),
-                        currentPos.getZ(),
-                        SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
+                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
                 player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
                 return stack;
             }
@@ -82,17 +70,12 @@ public class ItemMagicMirror extends Item {
             {
                 entity.stopRiding();
             }
-            entity.setPositionAndUpdate(
-                    backPos.getX() + 0.5f,
-                    backPos.getY() + 0.6f,
-                    backPos.getZ() + 0.5f);
+
+            player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.teleport"), true);
+            entity.setPositionAndUpdate(backPos.getX() + 0.5f, backPos.getY() + 0.6f, backPos.getZ() + 0.5f);
             entity.fallDistance = 0;
 
-            world.playSound(null,
-                    backPos.getX(),
-                    backPos.getY(),
-                    backPos.getZ(),
-                    SoundInit.TELEPORT, SoundCategory.PLAYERS, 1f, 1f);
+            world.playSound(null, backPos.getX(), backPos.getY(), backPos.getZ(), SoundInit.TELEPORT, SoundCategory.PLAYERS, 1f, 1f);
         }
         return stack;
     }

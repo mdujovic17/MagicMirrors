@@ -1,13 +1,33 @@
 {
   "item.magicmirror.magic_mirror": "Magic Mirror",
   "item.magicmirror.ice_mirror": "Mirror of the Yeti",
+  "item.magicmirror.magic_mirror_jungle": "Nature's Reflection",
+  "item.magicmirror.magic_mirror_desert": "Mirror of the Pharaoh",
+  "item.magicmirror.magic_mirror_ocean": "Neptune's Mirror",
+  "item.magicmirror.magic_mirror_cartographer": "Cartographer's Speculum",
+  "item.magicmirror.magic_mirror_mansion": "Caster's Reflector",
+  "item.magicmirror.magic_mirror_library": "Librarian's Magnifier",
 
   "item.magicmirror.dimensional_mirror": "Dimensional Mirror",
   "item.magicmirror.dimensional_mirror_ice": "Mirror of the Yeti (Dimensional)",
+  "item.magicmirror.dimensional_mirror_jungle": "Nature's Reflector (Dimensional)",
+  "item.magicmirror.dimensional_mirror_desert": "Mirror of the Pharaoh (Dimensional)",
+  "item.magicmirror.dimensional_mirror_ocean": "Neptune's Mirror (Dimensional)",
+  "item.magicmirror.dimensional_mirror_cartographer": "Cartographer's Speculum (Dimensional)",
+  "item.magicmirror.dimensional_mirror_mansion": "Caster's Reflector (Dimensional)",
+  "item.magicmirror.dimensional_mirror_library": "Librarian's Magnifier (Dimensional)",
+  "item.magicmirror.dimensional_mirror_end": "Reflective Dragonstone",
+
+  "item.magicmirror.dimension_crystal": "Dimension Crystal",
+  "item.magicmirror.mirror_frame": "Mirror frame",
+  "item.magicmirror.enchanted_mirror": "Enchanted Mirror",
+  "item.magicmirror.broken_mirror": "Broken Mirror",
+  "item.magicmirror.broken_mirror_dimensional": "Broken Dimensional Mirror",
+
 
   "chat.magicmirror.bednotfound": "Bed not found! Make sure you sleep in the bed before you can use the mirror!",
-  "chat.magicmirror.power": "This mirror is not powerful enough for cross-dimension travel!",
-  "chat.magicmirror.nether": "This mirror is not powerful enough to travel trough Nether!",
+  "chat.magicmirror.power": "This mirror is not powerful enough for cross-dimensional travel!",
+  "chat.magicmirror.nether": "This mirror is not powerful enough to travel through Nether!",
   "chat.magicmirror.dimension": "Jumping to Overworld...",
   "chat.magicmirror.teleport": "Teleporting to your bed...",
 

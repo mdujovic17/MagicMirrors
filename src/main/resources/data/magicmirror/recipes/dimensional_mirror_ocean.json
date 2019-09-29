@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "MED"
+  ],
+  "key":
+  {
+    "M":
+    {
+      "item": "magicmirror:magic_mirror_ocean"
+    },
+    "E":
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    "D":
+    {
+      "item": "magicmirror:dimension_crystal"
+    }
+  },
+  "result":
+  {
+    "item": "magicmirror:dimensional_mirror_ocean",
+    "count": 1
+  }
+}
