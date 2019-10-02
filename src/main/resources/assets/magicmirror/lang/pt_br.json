@@ -1,0 +1,38 @@
+{
+  "item.magicmirror.magic_mirror": "Espelho Mágico",
+  "item.magicmirror.ice_mirror": "Espelho do Yeti",
+  "item.magicmirror.magic_mirror_jungle": "Reflexão da Natureza",
+  "item.magicmirror.magic_mirror_desert": "Espelho do Faraó",
+  "item.magicmirror.magic_mirror_ocean": "Espelho de Netuno",
+  "item.magicmirror.magic_mirror_cartographer": "Espéculo do Cartógrafo",
+  "item.magicmirror.magic_mirror_mansion": "Refletor do Conjurador",
+  "item.magicmirror.magic_mirror_library": "Lupa do Bibliotecário",
+
+  "item.magicmirror.dimensional_mirror": "Espelho Dimensional",
+  "item.magicmirror.dimensional_mirror_ice": "Espelho do Yeti (Dimensional)",
+  "item.magicmirror.dimensional_mirror_jungle": "Reflexão da Natureza (Dimensional)",
+  "item.magicmirror.dimensional_mirror_desert": "Espelho do Faraó (Dimensional)",
+  "item.magicmirror.dimensional_mirror_ocean": "Espelho de Netuno (Dimensional)",
+  "item.magicmirror.dimensional_mirror_cartographer": "Espéculo do Cartógrafo (Dimensional)",
+  "item.magicmirror.dimensional_mirror_mansion": "Refletor do Conjurador (Dimensional)",
+  "item.magicmirror.dimensional_mirror_library": "Lupa do Bibliotecário (Dimensional)",
+  "item.magicmirror.dimensional_mirror_end": "Pedra do Dragão Reflexiva",
+
+  "item.magicmirror.dimension_crystal": "Cristal Dimensional",
+  "item.magicmirror.mirror_frame": "Moldura de Espelho",
+  "item.magicmirror.enchanted_mirror": "Espelho Encantado",
+  "item.magicmirror.broken_mirror": "Espelho Quebrado",
+  "item.magicmirror.broken_mirror_dimensional": "Espelho Dimensional Quebrado",
+
+
+  "chat.magicmirror.bednotfound": "Cama não encontrada! Durma antes de poder usar o espelho!",
+  "chat.magicmirror.power": "Este espelho não é poderoso o suficiente para viagens entre dimensões!",
+  "chat.magicmirror.nether": "Este espelho não é poderoso o suficiente para viajar através do Nether!",
+  "chat.magicmirror.dimension": "Saltando para o Overworld...",
+  "chat.magicmirror.teleport": "Teleportando para sua cama...",
+
+  "subtitle.magicmirror.teleport": "Teleporte",
+  "subtitle.magicmirror.mirror_discharge": "Descarga de Espelho",
+
+  "itemGroup.magic_mirrors": "Espelhos Mágicos"
+}
