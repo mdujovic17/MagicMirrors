@@ -8,4 +8,5 @@
   Mirrors aren't capable to teleport you across dimensions before an upgrade. To upgrade the mirror, you need to find Dimension   Crystal to turn them into Dimensional Mirrors!
 
 Translations:
+
   -Brazilian Portuguese: translated by MichaelLimaRodrigues
