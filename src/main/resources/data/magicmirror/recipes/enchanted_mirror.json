@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "QGQ",
+    "QNQ",
+    "QGQ"
+  ],
+  "key":
+  {
+    "G":
+    {
+      "item": "minecraft:glass_pane"
+    },
+    "N":
+    {
+      "item": "minecraft:nether_star"
+    },
+    "G":
+    {
+      "item": "minecraft:glass_pane"
+    },
+    "Q":
+    {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result":
+  {
+    "item": "magicmirror:enchanted_mirror",
+    "count": 1
+  }
+}

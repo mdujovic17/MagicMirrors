@@ -7,12 +7,12 @@
         {
           "type": "item",
           "name": "magicmirror:magic_mirror",
-          "weight": 5
+          "weight": 2
         },
         {
           "type": "item",
           "name": "magicmirror:magic_mirror_jungle",
-          "weight": 5
+          "weight": 3
         },
         {
           "type": "empty",

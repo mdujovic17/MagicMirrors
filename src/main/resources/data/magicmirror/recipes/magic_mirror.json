@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "FRM"
+  ],
+  "key":
+  {
+    "M":
+    {
+      "item": "magicmirror:enchanted_mirror"
+    },
+    "F":
+    {
+      "item": "magicmirror:mirror_frame"
+    },
+    "R":
+    {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result":
+  {
+    "item": "magicmirror:magic_mirror",
+    "count": 1
+  }
+}

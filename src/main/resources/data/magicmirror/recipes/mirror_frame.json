@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "III",
+    "INI",
+    "III"
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    "N":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "magicmirror:mirror_frame",
+    "count": 1
+  }
+}

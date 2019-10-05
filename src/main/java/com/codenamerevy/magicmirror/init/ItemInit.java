@@ -4,6 +4,7 @@ import com.codenamerevy.magicmirror.MagicMirror;
 import com.codenamerevy.magicmirror.items.ItemBase;
 import com.codenamerevy.magicmirror.items.ItemDimensionalMirror;
 import com.codenamerevy.magicmirror.items.ItemMagicMirror;
+import com.codenamerevy.magicmirror.items.ItemMirrorBase;
 import com.codenamerevy.magicmirror.util.Reference;
 import net.minecraft.item.Item;
 import net.minecraft.item.Rarity;
@@ -44,10 +45,10 @@ public class ItemInit
      * TODO: Add Config files
      * - Add Textures
      * - Add to creative tab
-     * - Should there be an item for each mirror or just one mirror can break?
+     * - With this method, only the main magic mirror can be crafted
      * **/
-    public static final Item MIRROR_FRAME = new ItemBase(new Item.Properties()).setRegistryName(location("mirror_frame"));
-    public static final Item ENCHANTED_MIRROR = new ItemBase(new Item.Properties().rarity(Rarity.RARE)).setRegistryName(location("enchanted_mirror"));
+    public static final Item MIRROR_FRAME = new ItemBase(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS)).setRegistryName(location("mirror_frame"));
+    public static final Item ENCHANTED_MIRROR = new ItemMirrorBase(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS)).setRegistryName(location("enchanted_mirror"));
     public static final Item BROKEN_MIRROR = new ItemBase(new Item.Properties()).setRegistryName(location("broken_mirror"));
     public static final Item BROKEN_MIRROR_DIMENSIONAL = new ItemBase(new Item.Properties()).setRegistryName(location("broken_mirror_dimensional"));
 

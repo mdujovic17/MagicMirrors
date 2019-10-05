@@ -12,11 +12,11 @@
       {
         "type": "item",
         "name": "magicmirror:magic_mirror_desert",
-        "weight": 4
+        "weight": 2
       },
       {
         "type": "empty",
-        "weight": 95
+        "weight": 97
       }
     ]
   }]

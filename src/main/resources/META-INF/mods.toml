@@ -4,29 +4,28 @@ issueTrackerURL="https://github.com/CodenameRevy/-1.14.4-MagicMirror/issues"
 
 [[mods]]
 modId="magicmirror"
-version="1.0.2.0"
+version="1.0.2.2"
 displayName="Magic Mirrors"
 displayURL="https://github.com/CodenameRevy/-1.14.4-MagicMirror"
 logoFile="logo.png"
-#credits="" #optional
+credits="MichaelLimaRodrigues" #optional
 authors="CodenameRevy"
 description='''
 Magic Mirror mod adds several new items that are used to teleport you to your bed location almost instantly!
 
-Update 1.0.2.0 changelog:
+Update 1.0.2.2 changelog:
 
--Added Mirror skins that can be found around the world:
-    -Mirror of the Yeti (igloos and snowy houses);
-    -Mirror of the Pharaoh (desert pyramids);
-    -Nature's Reflection (jungle temples);
-    -Neptune's Mirror (buried treasure, shipwrecks and ocean monuments);
-    -Librarian's Magnifier (stronghold library);
-    -Cartographer's Speculum (cartographer's house in villages);
-    -Reflective Dragonstone (end city).
+-Added Items to circumvent using the mod in existing worlds:
+     -Enchanted Mirror (Nether Star (Center), 2 Glass panes(Above and below Nether Star), 6 Nether Quartz (All around))
+     -Mirror Frame (Iron Ingot in center and Iron Nuggets all around)
+     -Magic Mirror is crafted with Mirror Frame, Redstone and Enchanted Mirror in that order
+     -Only the Main Magic Mirror can be crafted, the other Biome based aren't available with this method
 
--Added "Dimension Crystal" item that is used for crafting dimensiona mirrors:
-    -Each mirror has its dimensional counterpart, exepct Reflective Dragonstone (its already dimensional)
-    -Can be found in Nether Fortress
+-Brazilian Portuguese translation by MichaelLimaRodrigues
+
+-Bugfixes:
+     -Fixed Igloo chest loot table;
+     -Capitalization typo;
 '''
 
 [[dependencies.magicmirror]]

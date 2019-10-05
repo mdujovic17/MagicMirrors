@@ -7,11 +7,11 @@
         {
           "type": "item",
           "name": "magicmirror:magic_mirror",
-          "weight": 5
+          "weight": 3
         },
         {
           "type": "empty",
-          "weight": 95
+          "weight": 97
         }
       ]
     }]
