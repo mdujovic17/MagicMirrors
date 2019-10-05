@@ -9,4 +9,4 @@ Mirrors aren't capable to teleport you across dimensions before an upgrade. To u
 
 Translations:
 
--Brazilian Portuguese: transated by MichaelLimaRodrigues
+-Brazilian Portuguese: translated by MichaelLimaRodrigues
