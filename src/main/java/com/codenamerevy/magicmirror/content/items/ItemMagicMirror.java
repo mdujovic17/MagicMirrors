@@ -1,8 +1,6 @@
-package com.codenamerevy.magicmirror.items;
+package com.codenamerevy.magicmirror.content.items;
 
-import com.codenamerevy.magicmirror.init.ItemInit;
 import com.codenamerevy.magicmirror.init.SoundInit;
-import com.codenamerevy.magicmirror.util.ModRarity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -11,7 +9,6 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
-import net.minecraft.world.dimension.DimensionType;
 
 import java.util.Random;
 
@@ -22,7 +19,6 @@ public class ItemMagicMirror extends Item {
     public ItemMagicMirror(Properties properties) {
         super(properties);
 
-        ItemInit.ITEMS.add(this);
     }
 
     @Override

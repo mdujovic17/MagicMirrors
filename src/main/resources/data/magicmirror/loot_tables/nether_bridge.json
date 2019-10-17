@@ -1,23 +1,25 @@
 {
+  "type": "minecraft:chest",
   "pools": [
     {
       "name": "main",
-      "rolls": 1,
+      "rolls": 1.0,
       "entries":[
         {
           "type": "item",
           "name": "magicmirror:dimensional_mirror",
-          "weight": 5
+          "weight": 5.0
         },
         {
           "type": "item",
           "name": "magicmirror:dimension_crystal",
-          "weight": 10
+          "weight": 10.0
         },
         {
           "type": "empty",
-          "weight": 85
+          "weight": 85.0
         }
       ]
-    }]
+    }
+  ]
 }

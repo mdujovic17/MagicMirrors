@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "magicmirror:items",
+      "object": "ingredients"
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "pattern":
   [

@@ -1,6 +1,5 @@
-package com.codenamerevy.magicmirror.items;
+package com.codenamerevy.magicmirror.content.items;
 
-import com.codenamerevy.magicmirror.init.ItemInit;
 import com.codenamerevy.magicmirror.init.SoundInit;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,9 +12,6 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraft.world.dimension.DimensionType;
 
-/**
- * EXPERIMENTAL!!!
- */
 public class ItemDimensionalMirror extends ItemMagicMirror
 {
     private PlayerEntity player;
@@ -25,8 +21,6 @@ public class ItemDimensionalMirror extends ItemMagicMirror
     public ItemDimensionalMirror(Properties properties)
     {
         super(properties);
-
-        ItemInit.ITEMS.add(this);
     }
 
     @Override

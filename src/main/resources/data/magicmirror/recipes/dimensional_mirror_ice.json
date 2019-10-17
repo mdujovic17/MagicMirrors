@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "magicmirror:items",
+      "object": "dimensionals"
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "pattern":
   [

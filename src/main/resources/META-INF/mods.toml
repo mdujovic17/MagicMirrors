@@ -4,28 +4,26 @@ issueTrackerURL="https://github.com/CodenameRevy/-1.14.4-MagicMirror/issues"
 
 [[mods]]
 modId="magicmirror"
-version="1.0.2.2"
+version="1.0.3.5"
 displayName="Magic Mirrors"
 displayURL="https://github.com/CodenameRevy/-1.14.4-MagicMirror"
 logoFile="logo.png"
-credits="MichaelLimaRodrigues" #optional
+credits="MichaelLimaRodrigues"
 authors="CodenameRevy"
 description='''
 Magic Mirror mod adds several new items that are used to teleport you to your bed location almost instantly!
 
-Update 1.0.2.2 changelog:
+Update 1.0.3.5 changelog:
+- Added Configuration file for Items and Recipes (magicmirror_items.toml)
+- Reworked Loot Table Handler, Loot Tables should now generate in existing worlds
+- Updated to Forge 28.1.56
+- Updated Mappings to 20191017-1.14.3
 
--Added Items to circumvent using the mod in existing worlds:
-     -Enchanted Mirror (Nether Star (Center), 2 Glass panes(Above and below Nether Star), 6 Nether Quartz (All around))
-     -Mirror Frame (Iron Ingot in center and Iron Nuggets all around)
-     -Magic Mirror is crafted with Mirror Frame, Redstone and Enchanted Mirror in that order
-     -Only the Main Magic Mirror can be crafted, the other Biome based aren't available with this method
-
--Brazilian Portuguese translation by MichaelLimaRodrigues
-
--Bugfixes:
-     -Fixed Igloo chest loot table;
-     -Capitalization typo;
+[Internal Changes]
+- Optimized Imports
+- Removed unnecessary classes
+- Optimized loot_tables data structure
+- Optimized recipes data structure for configs
 '''
 
 [[dependencies.magicmirror]]

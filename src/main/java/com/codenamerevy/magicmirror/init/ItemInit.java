@@ -1,21 +1,17 @@
 package com.codenamerevy.magicmirror.init;
 
 import com.codenamerevy.magicmirror.MagicMirror;
-import com.codenamerevy.magicmirror.items.ItemBase;
-import com.codenamerevy.magicmirror.items.ItemDimensionalMirror;
-import com.codenamerevy.magicmirror.items.ItemMagicMirror;
-import com.codenamerevy.magicmirror.items.ItemMirrorBase;
+import com.codenamerevy.magicmirror.content.items.ItemBase;
+import com.codenamerevy.magicmirror.content.items.ItemDimensionalMirror;
+import com.codenamerevy.magicmirror.content.items.ItemMagicMirror;
+import com.codenamerevy.magicmirror.content.items.ItemMirrorBase;
 import com.codenamerevy.magicmirror.util.Reference;
 import net.minecraft.item.Item;
-import net.minecraft.item.Rarity;
 import net.minecraft.util.ResourceLocation;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ItemInit
 {
-    public static final List<Item> ITEMS = new ArrayList<Item>();
+    //public static final List<Item> ITEMS = new ArrayList<Item>(); Obsolete now
 
     //Regular Mirrors
     public static final Item MAGIC_MIRROR = new ItemMagicMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("magic_mirror"));
@@ -24,7 +20,6 @@ public class ItemInit
     public static final Item MAGIC_MIRROR_DESERT = new ItemMagicMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("magic_mirror_desert"));
     public static final Item MAGIC_MIRROR_OCEAN = new ItemMagicMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("magic_mirror_ocean"));
     public static final Item MAGIC_MIRROR_CARTOGRAPHER = new ItemMagicMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("magic_mirror_cartographer"));
-    //public static final Item MAGIC_MIRROR_MANSION = new ItemMagicMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("magic_mirror_mansion"));
     public static final Item MAGIC_MIRROR_LIBRARY = new ItemMagicMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("magic_mirror_library"));
 
     //Dimensional Mirrors
@@ -34,8 +29,6 @@ public class ItemInit
     public static final Item DIMENSIONAL_MIRROR_DESERT = new ItemDimensionalMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("dimensional_mirror_desert"));
     public static final Item DIMENSIONAL_MIRROR_OCEAN = new ItemDimensionalMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("dimensional_mirror_ocean"));
     public static final Item DIMENSIONAL_MIRROR_CARTOGRAPHER = new ItemDimensionalMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("dimensional_mirror_cartographer"));
-    //No idea for mansion textures and already 8 mirror versions, probably going to remove this in the future.
-    //public static final Item DIMENSIONAL_MIRROR_MANSION = new ItemDimensionalMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("dimensional_mirror_mansion"));
     public static final Item DIMENSIONAL_MIRROR_LIBRARY = new ItemDimensionalMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("dimensional_mirror_library"));
     public static final Item DIMENSIONAL_MIRROR_END = new ItemDimensionalMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("dimensional_mirror_end"));
 
