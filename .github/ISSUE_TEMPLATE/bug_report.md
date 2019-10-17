@@ -24,5 +24,8 @@ If applicable, add screenshots, or video footage, to help explain your problem.
  - Version [e.g. 19.2]
  - Java Version [e.g. 1.8.0]
 
+**Mods installed:**
+Please list *ALL* installed mods here, because there might be a compatibility issue.
+
 **Additional context**
 Add any other context about the problem here.
