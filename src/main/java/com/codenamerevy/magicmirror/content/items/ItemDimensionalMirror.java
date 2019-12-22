@@ -72,7 +72,7 @@ public class ItemDimensionalMirror extends ItemMagicMirror
         DimensionType prevDimension = player.dimension;
         DimensionType transDimension = prevDimension == DimensionType.THE_NETHER ? DimensionType.OVERWORLD : DimensionType.THE_NETHER;
 
-        serverPlayer.teleport(player.getServer().getWorld(transDimension), serverPlayer.posX, serverPlayer.posY, serverPlayer.posZ, serverPlayer.rotationYaw, serverPlayer.rotationPitch);
+        serverPlayer.teleport(player.getServer().getWorld(transDimension), serverPlayer.serverPosX, serverPlayer.serverPosY, serverPlayer.serverPosZ, serverPlayer.rotationYaw, serverPlayer.rotationPitch);
     }
 
     private void travelHomeFromEnd(PlayerEntity player)
@@ -82,7 +82,7 @@ public class ItemDimensionalMirror extends ItemMagicMirror
         DimensionType prevDimension = player.dimension;
         DimensionType transDimension = prevDimension == DimensionType.THE_END ? DimensionType.OVERWORLD : DimensionType.THE_END;
 
-        serverPlayer.teleport(player.getServer().getWorld(transDimension), serverPlayer.posX, serverPlayer.posY, serverPlayer.posZ, serverPlayer.rotationYaw, serverPlayer.rotationPitch);
+        serverPlayer.teleport(player.getServer().getWorld(transDimension), serverPlayer.serverPosX, serverPlayer.serverPosY, serverPlayer.serverPosZ, serverPlayer.rotationYaw, serverPlayer.rotationPitch);
     }
 
     @Override

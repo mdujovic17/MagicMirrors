@@ -35,7 +35,7 @@ public class ItemMagicMirror extends Item {
         Random rand = entity.world.rand;
         for (int i = 0; i < 45; i++)
         {
-            entity.world.addParticle(ParticleTypes.DRAGON_BREATH, entity.posX + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, entity.posY + rand.nextFloat() * 3 - 2, entity.posZ + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, 0, 0.105D, 0);
+            entity.world.addParticle(ParticleTypes.DRAGON_BREATH, entity.serverPosX + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, entity.chunkCoordY + rand.nextFloat() * 3 - 2, entity.serverPosZ + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, 0, 0.105D, 0);
         }
     }
 

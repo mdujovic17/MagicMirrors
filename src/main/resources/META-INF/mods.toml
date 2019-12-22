@@ -1,41 +1,37 @@
 modLoader="javafml"
-loaderVersion="[28,)"
-issueTrackerURL="https://github.com/CodenameRevy/-1.14.4-MagicMirror/issues"
+loaderVersion="[30,)"
+issueTrackerURL="https://github.com/CodenameRevy/MagicMirrors/issues"
 
 [[mods]]
 modId="magicmirror"
-version="1.0.3.5"
+version="1.0.3.6"
 displayName="Magic Mirrors"
-displayURL="https://github.com/CodenameRevy/-1.14.4-MagicMirror"
+displayURL="https://github.com/CodenameRevy/MagicMirrors"
 logoFile="logo.png"
 credits="MichaelLimaRodrigues"
 authors="CodenameRevy"
 description='''
 Magic Mirror mod adds several new items that are used to teleport you to your bed location almost instantly!
 
-Update 1.0.3.5 changelog:
-- Added Configuration file for Items and Recipes (magicmirror_items.toml)
-- Reworked Loot Table Handler, Loot Tables should now generate in existing worlds
-- Updated to Forge 28.1.56
-- Updated Mappings to 20191017-1.14.3
+Update 1.0.3.6 (1.15.1) changelog:
+
+- Updated to Forge 30.0.15
+- Updated Mappings to 20191222-1.14.3
 
 [Internal Changes]
-- Optimized Imports
-- Removed unnecessary classes
-- Optimized loot_tables data structure
-- Optimized recipes data structure for configs
+- Fixed some weird function names :P
 '''
 
 [[dependencies.magicmirror]]
     modId="forge"
     mandatory=true
-    versionRange="[28.1.0,)"
+    versionRange="[30,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.magicmirror]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.4]"
+    versionRange="[1.15.1]"
     ordering="NONE"
     side="BOTH"

@@ -122,7 +122,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("mineshaft_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(MINESHAFT).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("mineshaft_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(MINESHAFT).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
     }
 
     private static void addToTableBuried(LootTableLoadEvent event, int maxRolls)
@@ -130,14 +130,14 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("buried_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(BURIED).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("buried_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(BURIED).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
     }
     private static void addToTableDesert(LootTableLoadEvent event, int maxRolls)
     {
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("desert_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(DESERT).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("desert_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(DESERT).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableEnd(LootTableLoadEvent event, int maxRolls)
@@ -145,7 +145,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("end_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(END).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("end_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(END).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableIgloo(LootTableLoadEvent event, int maxRolls)
@@ -153,7 +153,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("igloo_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(IGLOO).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("igloo_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(IGLOO).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableJungle(LootTableLoadEvent event, int maxRolls)
@@ -161,7 +161,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("jungle_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(JUNGLE).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("jungle_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(JUNGLE).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableNether(LootTableLoadEvent event, int maxRolls)
@@ -169,7 +169,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("nether_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(NETHER).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("nether_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(NETHER).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableShipwreck(LootTableLoadEvent event, int maxRolls)
@@ -177,7 +177,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("shipwreck_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(SHIPWRECK).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("shipwreck_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(SHIPWRECK).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableStronghold(LootTableLoadEvent event, int maxRolls)
@@ -185,7 +185,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("stronghold_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(STRONGHOLD).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("stronghold_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(STRONGHOLD).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableCrossing(LootTableLoadEvent event, int maxRolls)
@@ -193,7 +193,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("crossing_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(CROSSING).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("crossing_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(CROSSING).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableLibrary(LootTableLoadEvent event, int maxRolls)
@@ -201,7 +201,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("library_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(LIBRARY).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("library_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(LIBRARY).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableUnderwater(LootTableLoadEvent event, int maxRolls)
@@ -209,7 +209,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("underwater_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(UNDERWATER).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("underwater_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(UNDERWATER).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableCartographer(LootTableLoadEvent event, int maxRolls)
@@ -217,7 +217,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("cartographer_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(CARTOGRAPHER).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("cartographer_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(CARTOGRAPHER).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
     private static void addToTableSnowyHouse(LootTableLoadEvent event, int maxRolls)
@@ -225,7 +225,7 @@ public final class LootHandler
         if (hasLootPool(event.getTable(), event.getName().toString())) return;
 
         Reference.LOGGER.info("Add mirrors to loot table {} ({} rolls)", event.getName(), maxRolls);
-        event.getTable().addPool((new LootPool.Builder()).name("snowy_house_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(SNOWY_HOUSE).weight(10).acceptFunction(SetCount.func_215932_a(new RandomValueRange(0, 1)))).build());
+        event.getTable().addPool((new LootPool.Builder()).name("snowy_house_added").rolls(new RandomValueRange(1, maxRolls)).addEntry(TableLootEntry.builder(SNOWY_HOUSE).weight(10).acceptFunction(SetCount.builder(new RandomValueRange(0, 1)))).build());
 
     }
 
