@@ -1,4 +1,4 @@
-# -1.14.4-MagicMirror
+# MagicMirrors
  
  ![Imgur](https://imgur.com/E5SSSBl.png)
  
