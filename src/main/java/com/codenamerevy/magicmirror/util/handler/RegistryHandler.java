@@ -1,8 +1,8 @@
 package com.codenamerevy.magicmirror.util.handler;
 
-import com.codenamerevy.magicmirror.config.ItemConfig;
+import com.codenamerevy.magicmirror.config.MagicMirrorsConfig;
 import com.codenamerevy.magicmirror.init.ItemInit;
-import com.codenamerevy.magicmirror.util.Reference;
+import com.codenamerevy.magicmirror.util.Ref;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,14 +16,18 @@ public class RegistryHandler
     public static void onItemRegistry(final RegistryEvent.Register<Item> event)
     {
         registerItems(event.getRegistry());
-        Reference.LOGGER.info("Registered item(s)!");
+        if(MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Registered item(s)!");
+        }
     }
 
-    public static void registerItems (IForgeRegistry<Item> registry)
-    {
+    public static void registerItems (IForgeRegistry<Item> registry) {
         //Mirrors
-        if(ItemConfig.enableMagicMirrors.get())
-        {
+        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Registering Items under configuration enableMagicMirrors (" + MagicMirrorsConfig.CategoryGeneral.enableMagicMirrors.get().toString() + ")");
+        }
+            if (MagicMirrorsConfig.CategoryGeneral.enableMagicMirrors.get()) {
+
             registry.register(ItemInit.MAGIC_MIRROR);
             registry.register(ItemInit.ICE_MIRROR);
             registry.register(ItemInit.MAGIC_MIRROR_CARTOGRAPHER);
@@ -34,8 +38,10 @@ public class RegistryHandler
         }
 
         //Dimensionals
-        if(ItemConfig.enableDimensionalMirrors.get())
-        {
+        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Registering Items under configuration enableDimensionalMirrors (" + MagicMirrorsConfig.CategoryGeneral.enableDimensionalMirrors.get().toString() + ")");
+        }
+        if (MagicMirrorsConfig.CategoryGeneral.enableDimensionalMirrors.get()) {
             registry.register(ItemInit.DIMENSIONAL_MIRROR);
             registry.register(ItemInit.DIMENSIONAL_MIRROR_ICE);
             registry.register(ItemInit.DIMENSIONAL_MIRROR_CARTOGRAPHER);
@@ -47,13 +53,20 @@ public class RegistryHandler
         }
 
         //Dimension Crystal
-        if(ItemConfig.enableDimensionCrystal.get())
+        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Registering Items under configuration enableDimensionCrystal (" + MagicMirrorsConfig.CategoryGeneral.enableDimensionCrystal.get().toString() + ")");
+
+        }
+        if(MagicMirrorsConfig.CategoryGeneral.enableDimensionCrystal.get())
         {
             registry.register(ItemInit.DIMENSION_CRYSTAL);
         }
 
         //Ingredients
-        if(ItemConfig.enableIngredients.get())
+        if(MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Registering Items under configuration enableIngredients (" + MagicMirrorsConfig.CategoryGeneral.enableIngredients.get().toString() + ")");
+        }
+        if(MagicMirrorsConfig.CategoryGeneral.enableIngredients.get())
         {
             registry.register(ItemInit.BROKEN_MIRROR);
             registry.register(ItemInit.BROKEN_MIRROR_DIMENSIONAL);

@@ -1,6 +1,7 @@
 package com.codenamerevy.magicmirror.content.items;
 
 import com.codenamerevy.magicmirror.init.SoundInit;
+import com.codenamerevy.magicmirror.util.TeleportHelper;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -31,16 +32,10 @@ public class ItemDimensionalMirror extends ItemMagicMirror
             player = (ServerPlayerEntity) entity;
             currentPos = player.getPosition();
 
-            if(world.getDimension().getType() == DimensionType.THE_NETHER)
+            if(world.getDimension().getType() != DimensionType.OVERWORLD)
             {
                 player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.dimension"), true);
-                this.travelHomeFromNether(player);
-            }
-
-            if(world.getDimension().getType() == DimensionType.THE_END)
-            {
-                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.dimension"), true);
-                this.travelHomeFromEnd(player);
+                TeleportHelper.travelHome(player);
             }
 
             bedPos = player.getBedLocation(player.dimension);
@@ -51,38 +46,12 @@ public class ItemDimensionalMirror extends ItemMagicMirror
                 player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
                 return stack;
             }
-
-            if (entity.getRidingEntity() != null)
-            {
+            if (entity.getRidingEntity() != null) {
                 entity.stopRiding();
             }
-            player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.teleport"), true);
-            entity.setPositionAndUpdate(bedPos.getX() + 0.5f, bedPos.getY() + 0.6f, bedPos.getZ() + 0.5f);
-            entity.fallDistance = 0;
-
-            world.playSound(null, bedPos.getX(), bedPos.getY(), bedPos.getZ(), SoundInit.TELEPORT, SoundCategory.PLAYERS, 1f, 1f);
+            TeleportHelper.setPositionAndUpdate(entity, world, bedPos);
         }
         return stack;
-    }
-
-    private void travelHomeFromNether(PlayerEntity player)
-    {
-        ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
-
-        DimensionType prevDimension = player.dimension;
-        DimensionType transDimension = prevDimension == DimensionType.THE_NETHER ? DimensionType.OVERWORLD : DimensionType.THE_NETHER;
-
-        serverPlayer.teleport(player.getServer().getWorld(transDimension), serverPlayer.serverPosX, serverPlayer.serverPosY, serverPlayer.serverPosZ, serverPlayer.rotationYaw, serverPlayer.rotationPitch);
-    }
-
-    private void travelHomeFromEnd(PlayerEntity player)
-    {
-        ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
-
-        DimensionType prevDimension = player.dimension;
-        DimensionType transDimension = prevDimension == DimensionType.THE_END ? DimensionType.OVERWORLD : DimensionType.THE_END;
-
-        serverPlayer.teleport(player.getServer().getWorld(transDimension), serverPlayer.serverPosX, serverPlayer.serverPosY, serverPlayer.serverPosZ, serverPlayer.rotationYaw, serverPlayer.rotationPitch);
     }
 
     @Override
@@ -91,4 +60,3 @@ public class ItemDimensionalMirror extends ItemMagicMirror
         return Rarity.EPIC;
     }
 }
-

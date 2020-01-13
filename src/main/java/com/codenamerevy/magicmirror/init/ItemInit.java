@@ -5,7 +5,7 @@ import com.codenamerevy.magicmirror.content.items.ItemBase;
 import com.codenamerevy.magicmirror.content.items.ItemDimensionalMirror;
 import com.codenamerevy.magicmirror.content.items.ItemMagicMirror;
 import com.codenamerevy.magicmirror.content.items.ItemMirrorBase;
-import com.codenamerevy.magicmirror.util.Reference;
+import com.codenamerevy.magicmirror.util.Ref;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 
@@ -47,6 +47,6 @@ public class ItemInit
 
     private static ResourceLocation location(String name)
     {
-        return new ResourceLocation(Reference.MODID, name);
+        return new ResourceLocation(Ref.MODID, name);
     }
 }

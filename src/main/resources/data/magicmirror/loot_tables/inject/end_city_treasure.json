@@ -1,0 +1,15 @@
+{
+  "pools": [
+    {
+      "name": "main",
+      "rolls": 1,
+      "entries":[
+        {
+          "type": "item",
+          "weight": 40,
+          "name": "magicmirror:dimensional_mirror_end"
+        }
+      ]
+    }
+  ]
+}

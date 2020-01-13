@@ -1,16 +1,12 @@
 package com.codenamerevy.magicmirror.util.handler;
 
-import com.codenamerevy.magicmirror.MagicMirror;
-import com.codenamerevy.magicmirror.util.Reference;
-import com.google.common.collect.ImmutableMap;
+import com.codenamerevy.magicmirror.config.MagicMirrorsConfig;
+import com.codenamerevy.magicmirror.util.Ref;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.*;
-import net.minecraft.world.storage.loot.functions.SetCount;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
-import java.util.Map;
 
 /**
  * OK a little about this class;
@@ -19,13 +15,68 @@ import java.util.Map;
  * Reason for that is because there are way too much if() statements and it will slow down the code. A lot.
  * Until I find a better way to do this, it will stay like this.
  * (Although this way has a lot more control, I still don't recommend it)
+ * THIS APPLIES TO COMMENTED CODE,, CURRENLTY TESTING OUT THE OLD MECHANIC WITH A FEW CHANGES
  *
  * @author CodenameRevy
  */
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = Ref.MODID)
 public final class LootHandler
 {
+    @SubscribeEvent
+    public static void lootLoad(LootTableLoadEvent event)
+    {
+        String prefix = "minecraft:chests/";
+        String name = event.getName().toString();
+        if(name.startsWith(prefix))
+        {
+            if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+                Ref.LOGGER.info("Begin LootPool load");
+            }
+                String file = name.substring(name.indexOf(prefix) + prefix.length());
+            switch(file)
+            {
+                case "abandoned_mineshaft":
+                case "buried_treasure":
+                case "desert_pyramid":
+                case "end_city_treasure":
+                case "igloo_chest":
+                case "jungle_temple":
+                case "nether_bridge":
+                case "shipwreck_treasure":
+                case "simple_dungeon":
+                case "stronghold_crossing":
+                case "stronghold_library":
+                case "underwater_ruin_big":
+                case "village_cartographer":
+                case "village_snowy_house":event.getTable().addPool(getInjectPool(file));
+                break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    private static LootPool getInjectPool(String entry)
+    {
+        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Begin Injecting loot pool");
+        }
+            return LootPool.builder().addEntry(getInjectEntry(entry, 1)).bonusRolls(0, 1).name("mirrors_inject").build();
+    }
+    private static LootEntry.Builder getInjectEntry(String name, int weight)
+    {
+
+        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Begin getting loot pool entries");
+        }
+
+        ResourceLocation table = new ResourceLocation(Ref.MODID, "inject/" + name);
+        return TableLootEntry.builder(table).weight(weight);
+
+    }
+
+    /**
     public static final ResourceLocation MINESHAFT      = MagicMirror.getId("abandoned_mineshaft");
     public static final ResourceLocation BURIED         = MagicMirror.getId("buried_treasure");
     public static final ResourceLocation DESERT         = MagicMirror.getId("desert_pyramid");
@@ -233,4 +284,5 @@ public final class LootHandler
     private static boolean hasLootPool(LootTable table, String poolName) {
         return table.getPool(poolName) != null;
     }
+    **/
 }

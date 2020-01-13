@@ -4,7 +4,7 @@ issueTrackerURL="https://github.com/CodenameRevy/MagicMirrors/issues"
 
 [[mods]]
 modId="magicmirror"
-version="1.0.3.6"
+version="${file.jarVersion}"
 displayName="Magic Mirrors"
 displayURL="https://github.com/CodenameRevy/MagicMirrors"
 logoFile="logo.png"

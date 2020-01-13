@@ -1,49 +1,61 @@
 package com.codenamerevy.magicmirror;
 
-import com.codenamerevy.magicmirror.config.ItemConfig;
+import com.codenamerevy.magicmirror.config.MagicMirrorsConfig;
 import com.codenamerevy.magicmirror.tabs.MirrorsItemGroup;
-import com.codenamerevy.magicmirror.util.Reference;
+import com.codenamerevy.magicmirror.util.Ref;
 import com.codenamerevy.magicmirror.util.handler.EventHandler;
 import com.codenamerevy.magicmirror.util.handler.LootHandler;
 import com.codenamerevy.magicmirror.util.handler.RegistryHandler;
 import com.codenamerevy.magicmirror.util.handler.SoundHandler;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLPaths;
 
-@Mod(Reference.MODID)
+@Mod(Ref.MODID)
 public class MagicMirror
 {
     public static final ItemGroup MAGIC_MIRRORS = new MirrorsItemGroup("magic_mirrors");
 
     public MagicMirror()
     {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        MinecraftForge.EVENT_BUS.addListener(LootHandler::onLootTableLoad);
-        MinecraftForge.EVENT_BUS.addListener(EventHandler::registerRecipeSerializers);
-        MinecraftForge.EVENT_BUS.addListener(RegistryHandler::onItemRegistry);
-        MinecraftForge.EVENT_BUS.addListener(SoundHandler::registerSounds);
-
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
-        ItemConfig.loadConfig(ItemConfig.SERVER_CONFIG, FMLPaths.CONFIGDIR.get().resolve("magicmirrors-items.toml"));
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, MagicMirrorsConfig.SERVER_CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MagicMirrorsConfig.COMMON_CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MagicMirrorsConfig.CLIENT_CONFIG);
+
     }
 
-    private void setup (final FMLCommonSetupEvent event)
+    @SubscribeEvent
+    public void clientSetup(final FMLClientSetupEvent event)
     {
-        MinecraftForge.EVENT_BUS.register(new LootHandler());
-        MinecraftForge.EVENT_BUS.register(new EventHandler());
-        MinecraftForge.EVENT_BUS.register(new RegistryHandler());
-        MinecraftForge.EVENT_BUS.register(new SoundHandler());
+        if(MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Doing Client Setup!");
+            Ref.LOGGER.info("START MAGICMIRRORS MOD LOADING. IF YOU ARE NOT A DEVELOPER, PLEASE DISABLE INTERNAL LOGGING IN magicmirrors-debug.toml!");
+        }
     }
 
-    public static ResourceLocation getId(String path) {
-        return new ResourceLocation(Reference.MODID, path);
+    @SubscribeEvent
+    public void commonSetup (final FMLCommonSetupEvent event)
+    {
+        if(MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            Ref.LOGGER.info("Doing Common Setup!");
+        }
+        MinecraftForge.EVENT_BUS.register(RegistryHandler.class);
+        MinecraftForge.EVENT_BUS.register(SoundHandler.class);
+        MinecraftForge.EVENT_BUS.register(EventHandler.class);
+        MinecraftForge.EVENT_BUS.register(LootHandler.class);
     }
 }
 

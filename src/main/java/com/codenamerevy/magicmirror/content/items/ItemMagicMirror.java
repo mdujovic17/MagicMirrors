@@ -1,6 +1,7 @@
 package com.codenamerevy.magicmirror.content.items;
 
 import com.codenamerevy.magicmirror.init.SoundInit;
+import com.codenamerevy.magicmirror.util.TeleportHelper;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -67,11 +68,7 @@ public class ItemMagicMirror extends Item {
                 entity.stopRiding();
             }
 
-            player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.teleport"), true);
-            entity.setPositionAndUpdate(backPos.getX() + 0.5f, backPos.getY() + 0.6f, backPos.getZ() + 0.5f);
-            entity.fallDistance = 0;
-
-            world.playSound(null, backPos.getX(), backPos.getY(), backPos.getZ(), SoundInit.TELEPORT, SoundCategory.PLAYERS, 1f, 1f);
+            TeleportHelper.setPositionAndUpdate(entity, world, bedPos);
         }
         return stack;
     }
