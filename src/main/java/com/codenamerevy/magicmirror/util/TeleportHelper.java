@@ -1,3 +1,7 @@
+/**
+ * @author CodenameRevy
+ */
+
 package com.codenamerevy.magicmirror.util;
 
 import com.codenamerevy.magicmirror.init.SoundInit;
@@ -14,7 +18,7 @@ public class TeleportHelper
 {
     private static PlayerEntity player;
 
-    public static final void travelHome(PlayerEntity player)
+    public static void travelHome(PlayerEntity player)
     {
         ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
 
@@ -24,7 +28,7 @@ public class TeleportHelper
         serverPlayer.teleport(player.getServer().getWorld(transDimension), serverPlayer.serverPosX, serverPlayer.serverPosY, serverPlayer.serverPosZ, serverPlayer.rotationYaw, serverPlayer.rotationPitch);
     }
 
-    public static final void setPositionAndUpdate(LivingEntity entity, World world, BlockPos bedPos)
+    public static void setPositionAndUpdate(LivingEntity entity, World world, BlockPos bedPos)
     {
         player = (ServerPlayerEntity) entity;
 

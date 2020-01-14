@@ -13,7 +13,13 @@
           "type": "item",
           "weight": 3,
           "name": "magicmirror:magic_mirror_library"
+        },
+        {
+          "type": "item",
+          "weight": 75,
+          "name": "minecraft:stick"
         }
       ]
-    }]
+    }
+  ]
 }

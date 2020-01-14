@@ -9,7 +9,13 @@
           "weight": 5,
           "name": "magicmirror:magic_mirror_ocean"
 
+        },
+        {
+          "type": "item",
+          "weight": 75,
+          "name": "minecraft:stick"
         }
       ]
-    }]
+    }
+  ]
 }

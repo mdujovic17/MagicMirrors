@@ -13,6 +13,11 @@
           "type": "item",
           "weight": 10,
           "name": "magicmirror:dimension_crystal"
+        },
+        {
+          "type": "item",
+          "weight": 75,
+          "name": "minecraft:stick"
         }
       ]
     }

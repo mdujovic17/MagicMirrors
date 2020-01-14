@@ -8,7 +8,13 @@
           "type": "item",
           "weight": 1,
           "name": "magicmirror:magic_mirror_cartographer"
+        },
+        {
+          "type": "item",
+          "weight": 75,
+          "name": "minecraft:stick"
         }
       ]
-    }]
+    }
+  ]
 }

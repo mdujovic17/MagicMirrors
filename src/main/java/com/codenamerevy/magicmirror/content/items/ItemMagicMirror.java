@@ -1,5 +1,10 @@
+/**
+ * @author CodenameRevy
+ */
+
 package com.codenamerevy.magicmirror.content.items;
 
+import com.codenamerevy.magicmirror.init.ParticleInit;
 import com.codenamerevy.magicmirror.init.SoundInit;
 import com.codenamerevy.magicmirror.util.TeleportHelper;
 import net.minecraft.entity.LivingEntity;
@@ -32,11 +37,9 @@ public class ItemMagicMirror extends Item {
     @Override
     public void onUsingTick (ItemStack stack, LivingEntity entity,int count)
     {
-
         Random rand = entity.world.rand;
-        for (int i = 0; i < 45; i++)
-        {
-            entity.world.addParticle(ParticleTypes.DRAGON_BREATH, entity.serverPosX + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, entity.chunkCoordY + rand.nextFloat() * 3 - 2, entity.serverPosZ + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, 0, 0.105D, 0);
+        for(int a = 0; a < 25; a++) {
+            entity.world.addParticle(ParticleInit.MIRROR_PARTICLE, entity.lastTickPosX + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, entity.lastTickPosY + rand.nextFloat() * 3 - 2, entity.lastTickPosZ + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, -1, -0.105D, -1);
         }
     }
 

@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-version = '1.0.4.0'
+version = '1.0.4.1'
 group = 'com.codenamerevy.magicmirror'
 archivesBaseName = 'magicmirror'
 
@@ -76,7 +76,7 @@ minecraft {
 
 dependencies {
     // Forge version
-    minecraft 'net.minecraftforge:forge:1.15.1-30.0.36'
+    minecraft 'net.minecraftforge:forge:1.15.1-30.0.39'
 }
 
 // Manifest for reading by the runtime..

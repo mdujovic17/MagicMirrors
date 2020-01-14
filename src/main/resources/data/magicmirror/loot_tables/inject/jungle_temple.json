@@ -13,6 +13,11 @@
           "type": "item",
           "weight": 3,
           "name": "magicmirror:magic_mirror_jungle"
+        },
+        {
+          "type": "item",
+          "weight": 75,
+          "name": "minecraft:stick"
         }
       ]
     }
