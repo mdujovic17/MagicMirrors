@@ -12,14 +12,6 @@ credits="MichaelLimaRodrigues"
 authors="CodenameRevy"
 description='''
 Magic Mirror mod adds several new items that are used to teleport you to your bed location almost instantly!
-
-Update 1.0.3.6 (1.15.1) changelog:
-
-- Updated to Forge 30.0.15
-- Updated Mappings to 20191222-1.14.3
-
-[Internal Changes]
-- Fixed some weird function names :P
 '''
 
 [[dependencies.magicmirror]]

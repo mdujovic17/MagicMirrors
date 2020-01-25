@@ -11,8 +11,6 @@ import net.minecraft.util.ResourceLocation;
 
 public class ItemInit
 {
-    //public static final List<Item> ITEMS = new ArrayList<Item>(); Obsolete now
-
     //Regular Mirrors
     public static final Item MAGIC_MIRROR = new ItemMagicMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("magic_mirror"));
     public static final Item ICE_MIRROR = new ItemMagicMirror(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS).maxStackSize(1)).setRegistryName(location("ice_mirror"));
@@ -34,12 +32,7 @@ public class ItemInit
 
     //Materials
     public static final Item DIMENSION_CRYSTAL = new ItemBase(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS)).setRegistryName(location("dimension_crystal"));
-    /**
-     * TODO: Add Config files
-     * - Add Textures
-     * - Add to creative tab
-     * - With this method, only the main magic mirror can be crafted
-     * **/
+
     public static final Item MIRROR_FRAME = new ItemBase(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS)).setRegistryName(location("mirror_frame"));
     public static final Item ENCHANTED_MIRROR = new ItemMirrorBase(new Item.Properties().group(MagicMirror.MAGIC_MIRRORS)).setRegistryName(location("enchanted_mirror"));
     public static final Item BROKEN_MIRROR = new ItemBase(new Item.Properties()).setRegistryName(location("broken_mirror"));

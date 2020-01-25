@@ -1,7 +1,7 @@
 {
     "pack": {
         "description": "Magic Mirror Resources",
-        "pack_format": 4,
+        "pack_format": 5,
         "_comment": "Resources used for Magic Mirror"
     }
 }

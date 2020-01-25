@@ -1,6 +1,6 @@
 package com.codenamerevy.magicmirror.util.handler;
 
-import com.codenamerevy.magicmirror.config.MagicMirrorsConfig;
+import com.codenamerevy.magicmirror.config.Config;
 import com.codenamerevy.magicmirror.util.Ref;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
@@ -20,7 +20,7 @@ public class SoundHandler
     {
         TELEPORT = registerSound("teleport");
         MIRROR_DISCHARGE = registerSound("mirror_discharge");
-        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+        if (Config.CategoryDeveloper.enableLogger.get()) {
             Ref.LOGGER.info("Registered sound(s)!");
         }
     }

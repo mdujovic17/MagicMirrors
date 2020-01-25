@@ -31,10 +31,9 @@
   "chat.magicmirror.dimension": "Jumping to Overworld...",
   "chat.magicmirror.teleport": "Teleporting to your bed...",
 
-  "magicmirror.config.ingredients": "Should Magic Mirror Ingredients be enabled?",
-  "magicmirror.config.dimensionals": "Should Dimensional Mirrors be enabled?",
-  "magicmirror.config.crystal": "Should Dimension Crystal be enabled?",
-  "magicmirror.config.disable_all_items": "Should all mirrors be disabled?",
+  "magicmirror.config.recipe_mirror": "Should Magic Mirror recipe be enabled?",
+  "magicmirror.config.recipe_dim": "Should Dimensional Mirrors recipes be enabled?",
+
   "codenamerevy.config.logging": "Enable Internal Logging. This is not advised as its used internally.",
 
   "subtitle.magicmirror.teleport": "Teleport",

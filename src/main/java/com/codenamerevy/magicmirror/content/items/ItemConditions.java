@@ -1,6 +1,6 @@
 package com.codenamerevy.magicmirror.content.items;
 
-import com.codenamerevy.magicmirror.config.MagicMirrorsConfig;
+import com.codenamerevy.magicmirror.config.Config;
 import com.codenamerevy.magicmirror.util.Ref;
 import com.google.gson.JsonObject;
 import net.minecraft.util.ResourceLocation;
@@ -26,13 +26,8 @@ public class ItemConditions implements ICondition
     @Override
     public boolean test()
     {
-        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
-            Ref.LOGGER.info("Begin Item Condition registering");
-        }
-        if(object.equals("magic_mirrors"))      return MagicMirrorsConfig.CategoryGeneral.enableMagicMirrors.get();
-        if(object.equals("dimension_crystals")) return MagicMirrorsConfig.CategoryGeneral.enableDimensionCrystal.get();
-        if(object.equals("ingredients"))        return MagicMirrorsConfig.CategoryGeneral.enableIngredients.get();
-        if(object.equals("dimensionals"))       return MagicMirrorsConfig.CategoryGeneral.enableDimensionalMirrors.get();
+        if(object.equals("ingredients"))        return Config.GENERAL.enableIngredients.get();
+        if(object.equals("dimensionals"))       return Config.GENERAL.enableDimensionalMirrors.get();
         return false;
     }
 

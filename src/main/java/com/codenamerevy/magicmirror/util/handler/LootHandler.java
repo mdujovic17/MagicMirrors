@@ -1,6 +1,6 @@
 package com.codenamerevy.magicmirror.util.handler;
 
-import com.codenamerevy.magicmirror.config.MagicMirrorsConfig;
+import com.codenamerevy.magicmirror.config.Config;
 import com.codenamerevy.magicmirror.util.Ref;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.*;
@@ -18,7 +18,7 @@ public final class LootHandler
         String name = event.getName().toString();
         if(name.startsWith(prefix))
         {
-            if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+            if (Config.CategoryDeveloper.enableLogger.get()) {
                 Ref.LOGGER.info("Begin LootPool load");
             }
                 String file = name.substring(name.indexOf(prefix) + prefix.length());
@@ -47,7 +47,7 @@ public final class LootHandler
 
     private static LootPool getInjectPool(String entry)
     {
-        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+        if (Config.CategoryDeveloper.enableLogger.get()) {
             Ref.LOGGER.info("Begin Injecting loot pool");
         }
             return LootPool.builder().addEntry(getInjectEntry(entry, 1)).bonusRolls(0, 1).name("mirrors_inject").build();
@@ -55,7 +55,7 @@ public final class LootHandler
     private static LootEntry.Builder getInjectEntry(String name, int weight)
     {
 
-        if (MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+        if (Config.CategoryDeveloper.enableLogger.get()) {
             Ref.LOGGER.info("Begin getting loot pool entries");
         }
 

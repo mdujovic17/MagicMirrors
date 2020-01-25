@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-version = '1.0.4.1'
+version = '1.0.4.3'
 group = 'com.codenamerevy.magicmirror'
 archivesBaseName = 'magicmirror'
 
@@ -20,7 +20,7 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 
 minecraft {
     //Mappings Version
-    mappings channel: 'snapshot', version: '20191227-1.14.3'
+    mappings channel: 'snapshot', version: '20200122-1.15.1'
     runs {
         client {
             workingDirectory project.file('run')
@@ -76,7 +76,7 @@ minecraft {
 
 dependencies {
     // Forge version
-    minecraft 'net.minecraftforge:forge:1.15.1-30.0.39'
+    minecraft 'net.minecraftforge:forge:1.15.1-30.0.42'
 }
 
 // Manifest for reading by the runtime..

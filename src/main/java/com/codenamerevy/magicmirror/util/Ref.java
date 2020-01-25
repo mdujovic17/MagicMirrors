@@ -1,6 +1,6 @@
 package com.codenamerevy.magicmirror.util;
 
-import com.codenamerevy.magicmirror.config.MagicMirrorsConfig;
+import com.codenamerevy.magicmirror.config.Config;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,7 +11,7 @@ public class Ref
 
     private Ref()
     {
-        if(MagicMirrorsConfig.CategoryDeveloper.enableLogger.get()) {
+        if(Config.CategoryDeveloper.enableLogger.get()) {
             LOGGER.info("Reference called!");
         }
     }
