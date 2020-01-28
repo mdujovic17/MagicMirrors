@@ -69,7 +69,7 @@ public class Config {
     }
 
     @SubscribeEvent
-    public static void onFileChange(final ModConfig.ConfigReloading configEvent) {
+    public static void onFileChange(final ModConfig.Reloading configEvent) {
         Ref.LOGGER.fatal(CORE, "{} config just got changed on the file system!", Ref.MODID);
     }
 }
