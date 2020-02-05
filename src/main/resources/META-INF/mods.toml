@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[30,)"
+loaderVersion="[31,)"
 issueTrackerURL="https://github.com/CodenameRevy/MagicMirrors/issues"
 
 [[mods]]
@@ -8,7 +8,7 @@ version="${file.jarVersion}"
 displayName="Magic Mirrors"
 displayURL="https://github.com/CodenameRevy/MagicMirrors"
 logoFile="logo.png"
-credits="MichaelLimaRodrigues"
+credits="CodenameRevy, MichaelLimaRodrigues"
 authors="CodenameRevy"
 description='''
 Magic Mirror mod adds several new items that are used to teleport you to your bed location almost instantly!
@@ -17,13 +17,13 @@ Magic Mirror mod adds several new items that are used to teleport you to your be
 [[dependencies.magicmirror]]
     modId="forge"
     mandatory=true
-    versionRange="[30,)"
+    versionRange="[31,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.magicmirror]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.1]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
