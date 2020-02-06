@@ -31,6 +31,11 @@
   "chat.magicmirror.dimension": "Saltando para o Overworld...",
   "chat.magicmirror.teleport": "Teleportando para sua cama...",
 
+  "magicmirror.config.recipe_mirror": "A receita  de 'Espelho Mágico' deve ser ativada?",
+  "magicmirror.config.recipe_dim": "As receitas de 'Espelhos Dimensionais' devem ser ativadas?",
+
+  "codenamerevy.config.logging": "Ativar log interno. Isso não é recomendado, pois é usado internamente.",
+  
   "subtitle.magicmirror.teleport": "Teleporte",
   "subtitle.magicmirror.mirror_discharge": "Descarga de Espelho",
 
