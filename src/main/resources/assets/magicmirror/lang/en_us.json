@@ -30,6 +30,7 @@
   "chat.magicmirror.nether": "This mirror is not powerful enough to travel through Nether!",
   "chat.magicmirror.dimension": "Jumping to Overworld...",
   "chat.magicmirror.teleport": "Teleporting to your bed...",
+  "chat.magicmirror.isriding": "You have to dismount before you can teleport!",
 
   "magicmirror.config.recipe_mirror": "Should Magic Mirror recipe be enabled?",
   "magicmirror.config.recipe_dim": "Should Dimensional Mirrors recipes be enabled?",

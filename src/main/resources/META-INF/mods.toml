@@ -8,7 +8,9 @@ version="${file.jarVersion}"
 displayName="Magic Mirrors"
 displayURL="https://github.com/CodenameRevy/MagicMirrors"
 logoFile="logo.png"
-credits="CodenameRevy, MichaelLimaRodrigues"
+credits='''
+CodenameRevy (Mod developer),
+MichaelLimaRodrigues (Brazilian Portuguese translations)'''
 authors="CodenameRevy"
 description='''
 Magic Mirror mod adds several new items that are used to teleport you to your bed location almost instantly!

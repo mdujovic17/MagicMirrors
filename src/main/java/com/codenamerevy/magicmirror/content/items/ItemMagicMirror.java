@@ -15,7 +15,9 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Random;
 
 public class ItemMagicMirror extends Item {
@@ -64,11 +66,6 @@ public class ItemMagicMirror extends Item {
                 world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
                 player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
                 return stack;
-            }
-
-            if (entity.getRidingEntity() != null)
-            {
-                entity.stopRiding();
             }
 
             TeleportHelper.setPositionAndUpdate(entity, world, bedPos);

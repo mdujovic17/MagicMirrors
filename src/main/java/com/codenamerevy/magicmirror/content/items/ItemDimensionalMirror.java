@@ -44,14 +44,10 @@ public class ItemDimensionalMirror extends ItemMagicMirror
 
             bedPos = player.getBedLocation(player.dimension);
 
-            if (bedPos == null)
-            {
+            if (bedPos == null) {
                 world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
                 player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
                 return stack;
-            }
-            if (entity.getRidingEntity() != null) {
-                entity.stopRiding();
             }
             TeleportHelper.setPositionAndUpdate(entity, world, bedPos);
         }
