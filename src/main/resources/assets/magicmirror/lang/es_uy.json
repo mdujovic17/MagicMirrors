@@ -1,0 +1,44 @@
+{
+  "item.magicmirror.magic_mirror": "Espejo mágico",
+  "item.magicmirror.ice_mirror": "Espejo del Yeti",
+  "item.magicmirror.magic_mirror_jungle": "Reflejo de la naturaleza",
+  "item.magicmirror.magic_mirror_desert": "Espejo del faraón",
+  "item.magicmirror.magic_mirror_ocean": "Espejo de Neptuno",
+  "item.magicmirror.magic_mirror_cartographer": "Espéculo de cartógrafo",
+  "item.magicmirror.magic_mirror_mansion": "Reflector de conjurador",
+  "item.magicmirror.magic_mirror_library": "Lupa de bibliotecario",
+
+  "item.magicmirror.dimensional_mirror": "Espejo interdimensional",
+  "item.magicmirror.dimensional_mirror_ice": "Espejo del Yeti (Interdimensional)",
+  "item.magicmirror.dimensional_mirror_jungle": "Reflejo de la naturaleza (Interdimensional)",
+  "item.magicmirror.dimensional_mirror_desert": "Espejo del faraón (Interdimensional)",
+  "item.magicmirror.dimensional_mirror_ocean": "Espejo de Neptuno (Interdimensional)",
+  "item.magicmirror.dimensional_mirror_cartographer": "Espéculo de cartógrafo (Interdimensional)",
+  "item.magicmirror.dimensional_mirror_mansion": "Reflector de conjurador (Interdimensional)",
+  "item.magicmirror.dimensional_mirror_library": "Lupa de bibliotecario (Interdimensional)",
+  "item.magicmirror.dimensional_mirror_end": "Espejo de Dragonstone",
+
+  "item.magicmirror.dimension_crystal": "Cristal dimensional",
+  "item.magicmirror.mirror_frame": "Marco del espejo",
+  "item.magicmirror.enchanted_mirror": "Espejo encantado",
+  "item.magicmirror.broken_mirror": "Espejo roto",
+  "item.magicmirror.broken_mirror_dimensional": "Espejo interdimensional roto",
+
+
+  "chat.magicmirror.bednotfound": "¡Cama no encontrada! ¡Necesitas dormir para poder usar el espejo!",
+  "chat.magicmirror.power": "¡Este espejo no dispone del poder suficiente para poder hacer un teletransportarte interdimensional!",
+  "chat.magicmirror.nether": "¡Este espejo no dispone del poder suficiente para viajar a través del Nether!",
+  "chat.magicmirror.dimension": "Saltando al Overworld...",
+  "chat.magicmirror.teleport": "Teletransportando a tu cama...",
+  "chat.magicmirror.isriding": "¡Tienes que desmontar antes de poder teletransportarte!",
+
+  "magicmirror.config.recipe_mirror": "¿Desea activar la receta del 'espejo mágico'?",
+  "magicmirror.config.recipe_dim": "¿Desea activar la receta del 'espejo interdimensional'?",
+
+  "codenamerevy.config.logging": "Habilitar el registro interno. Esto no se recomienda ya que se usa internamente.",
+
+  "subtitle.magicmirror.teleport": "Teletransporte",
+  "subtitle.magicmirror.mirror_discharge": "Descarga de espejo",
+
+  "itemGroup.magic_mirrors": "Magic Mirrors (Espejos Mágicos)"
+}
