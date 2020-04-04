@@ -1,12 +1,12 @@
 {
   "teleport": {
     "category": "player",
-    "subtitle": "magicmirror.subtitle.teleport",
+    "subtitle": "subtitle.magicmirror.teleport",
     "sounds": [ "magicmirror:teleport" ]
   },
   "mirror_discharge": {
     "category": "player,",
-    "subtitle": "magicmirror.subtitle.mirror_discharge",
+    "subtitle": "subtitle.magicmirror.mirror_discharge",
     "sounds": [ "magicmirror:mirror_discharge" ]
   }
 }
