@@ -1,7 +1,3 @@
-/**
- * @author CodenameRevy
- */
-
 package com.codenamerevy.magicmirror.content.items;
 
 import com.codenamerevy.magicmirror.init.SoundInit;

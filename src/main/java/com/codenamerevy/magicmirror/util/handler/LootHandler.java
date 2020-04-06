@@ -1,3 +1,9 @@
+/*
+TODO: Update this class
+This method seems to sometimes work and sometimes it doesn't.
+Need to find a more stable way to populate loot tables...
+ */
+
 package com.codenamerevy.magicmirror.util.handler;
 
 import com.codenamerevy.magicmirror.config.Config;

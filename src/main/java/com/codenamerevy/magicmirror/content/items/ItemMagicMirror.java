@@ -1,7 +1,3 @@
-/**
- * @author CodenameRevy
- */
-
 package com.codenamerevy.magicmirror.content.items;
 
 import com.codenamerevy.magicmirror.init.ParticleInit;
@@ -41,7 +37,7 @@ public class ItemMagicMirror extends Item {
     {
         Random rand = entity.world.rand;
         for(int a = 0; a < 25; a++) {
-            entity.world.addParticle(ParticleInit.MIRROR_PARTICLE, entity.lastTickPosX + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, entity.lastTickPosY + rand.nextFloat() * 3 - 2, entity.lastTickPosZ + (rand.nextBoolean() ? -1 : 1) * Math.pow(rand.nextFloat(), 2) * 2, -1, -0.105D, -1);
+            entity.world.addParticle(ParticleInit.MIRROR_PARTICLE, entity.lastTickPosX + (rand.nextBoolean() ? -0.5 : 0.5) * Math.pow(rand.nextFloat(), 2) * 2, entity.lastTickPosY + rand.nextFloat() * 3 - 2, entity.lastTickPosZ + (rand.nextBoolean() ? -0.5 : 0.5) * Math.pow(rand.nextFloat(), 2) * 2, -1, -0.105D, -1);
         }
     }
 

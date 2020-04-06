@@ -22,7 +22,6 @@ public class TeleportHelper
 {
     private static PlayerEntity player;
     private static ServerWorld serverWorld;
-    private static Entity ridingEntity;
 
     public static void travelHome(PlayerEntity player)
     {

@@ -20,7 +20,6 @@ public class Config {
     public static final CategoryGeneral GENERAL = new CategoryGeneral();
     public static final CategoryDeveloper DEVELOPER = new CategoryDeveloper();
 
-
     public static final class CategoryGeneral {
 
         public static ForgeConfigSpec.BooleanValue enableIngredients;

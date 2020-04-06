@@ -17,13 +17,13 @@ public class MirrorParticle extends SpriteTexturedParticle
     private MirrorParticle(IAnimatedSprite animatedSprite, World world, double x, double y, double z, double speedX, double speedY, double speedZ) {
         super(world, x, y, z, 0.5D - RAND.nextDouble(), speedY, 0.5D - RAND.nextDouble());
         this.animatedSprite = animatedSprite;
-        this.motionY *= 0.20000000029082000D;
+        this.motionY *= 0.15D;
         if(speedX == 0.0D && speedZ == 0.0D) {
-            this.motionX *= 0.10000000029082000D;
-            this.motionZ *= 0.10000000029082000D;
+            this.motionX *= 0.5D;
+            this.motionZ *= 0.5D;
         }
-        this.particleScale *= 0.5F;
-        this.maxAge = (int)(7.5D / (Math.random() * 0.4D + 0.2D));
+        this.particleScale *= 0.3F;
+        this.maxAge = (int)(7.5D / (Math.random() * 0.2D + 0.1D)); //was 7.5 0.4 and 0.2
         this.canCollide = false;
         this.selectSpriteWithAge(animatedSprite);
     }
@@ -40,15 +40,15 @@ public class MirrorParticle extends SpriteTexturedParticle
             this.motionY += 0.04D;
             this.move(this.motionX, this.motionY, this.motionZ);
             if(this.posY == this.prevPosY){
-                this.motionX *= 1.1D;
-                this.motionZ *= 1.1D;
+                this.motionX *= 0.5D;
+                this.motionZ *= 0.5D;
             }
-            this.motionX *= 0.9599999785423279D;
-            this.motionY *= 0.9599999785423279D;
-            this.motionZ *= 0.9599999785423279D;
+            this.motionX *= 0.5D;
+            this.motionY *= 0.5D;
+            this.motionZ *= 0.5D;
             if (this.onGround) {
-                this.motionX *= 0.699999988079071D;
-                this.motionZ *= 0.699999988079071D;
+                this.motionX *= 0.5D;
+                this.motionZ *= 0.5D;
             }
         }
     }
