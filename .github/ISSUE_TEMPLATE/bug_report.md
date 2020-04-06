@@ -23,6 +23,8 @@ If applicable, add screenshots, or video footage, to help explain your problem.
  - OS: [e.g. Linux Mint]
  - Version [e.g. 19.2]
  - Java Version [e.g. 1.8.0]
+ - Minecraft Version [e.g. 1.15.2]
+ - Loader Version [e.g. Forge 31.1.37]
 
 **Mods installed:**
 Please list *ALL* installed mods here, because there might be a compatibility issue.
