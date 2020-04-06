@@ -1,0 +1,44 @@
+{
+  "item.magicmirror.magic_mirror": "Магическое зеркало",
+  "item.magicmirror.ice_mirror": "Зеркало Йети",
+  "item.magicmirror.magic_mirror_jungle": "Отражение природы",
+  "item.magicmirror.magic_mirror_desert": "Зеркало Фараона",
+  "item.magicmirror.magic_mirror_ocean": "Зеркало Нептуна",
+  "item.magicmirror.magic_mirror_cartographer": "Зеркало картографа",
+  "item.magicmirror.magic_mirror_mansion": "Отражатель заклинателя",
+  "item.magicmirror.magic_mirror_library": "Лупа библиотекаря",
+
+  "item.magicmirror.dimensional_mirror": "Межизмеренческое зеркало",
+  "item.magicmirror.dimensional_mirror_ice": "Зеркало Йети (межизмеренческое)",
+  "item.magicmirror.dimensional_mirror_jungle": "Отражение природы (межизмеренческое)",
+  "item.magicmirror.dimensional_mirror_desert": "Зеркало Фараона (межизмеренческое)",
+  "item.magicmirror.dimensional_mirror_ocean": "Зеркало Нептуна (межизмеренческое)",
+  "item.magicmirror.dimensional_mirror_cartographer": "Зеркало картографа (межизмеренческое)",
+  "item.magicmirror.dimensional_mirror_mansion": "Отражатель заклинателя (межизмеренческий)",
+  "item.magicmirror.dimensional_mirror_library": "Лупа библиотекаря (межизмеренческая)",
+  "item.magicmirror.dimensional_mirror_end": "Отражающий драконий камень",
+
+  "item.magicmirror.dimension_crystal": "Кристалл измерений",
+  "item.magicmirror.mirror_frame": "Рамка зеркала",
+  "item.magicmirror.enchanted_mirror": "Зачарованное зеркало",
+  "item.magicmirror.broken_mirror": "Разбитое зеркало",
+  "item.magicmirror.broken_mirror_dimensional": "Разбитое межизмеренческое зеркало",
+
+
+  "chat.magicmirror.bednotfound": "Кровать не найдена! Вы должны поспать, прежде чем использовать зеркало!",
+  "chat.magicmirror.power": "Это зеркало недостаточно мощное для межизмеренческих путешествий!",
+  "chat.magicmirror.nether": "Это зеркало недостаточно мощное, чтобы путешествовать через Незер!",
+  "chat.magicmirror.dimension": "Прыжок в Обычный мир...",
+  "chat.magicmirror.teleport": "Телепортация к вашей кровати...",
+  "chat.magicmirror.isriding": "Вы должны спешиться, прежде чем телепортироваться!",
+
+  "magicmirror.config.recipe_mirror": "Включить рецепт «магического зеркала»?",
+  "magicmirror.config.recipe_dim": "Включить рецепты «межизмеренческих зеркал»?",
+
+  "codenamerevy.config.logging": "Включить внутреннее логирование? (используется для отладки)",
+
+  "subtitle.magicmirror.teleport": "Телепортация",
+  "subtitle.magicmirror.mirror_discharge": "Зеркальный разряд",
+
+  "itemGroup.magic_mirrors": "Magic Mirrors"
+}
