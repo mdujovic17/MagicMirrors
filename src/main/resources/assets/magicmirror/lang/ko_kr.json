@@ -1,0 +1,44 @@
+{
+  "item.magicmirror.magic_mirror": "마법 거울",
+  "item.magicmirror.ice_mirror": "설인의 거울",
+  "item.magicmirror.magic_mirror_jungle": "자연의 반사경",
+  "item.magicmirror.magic_mirror_desert": "파라오의 거울",
+  "item.magicmirror.magic_mirror_ocean": "해신의 거울",
+  "item.magicmirror.magic_mirror_cartographer": "지도 제작자의 검경",
+  "item.magicmirror.magic_mirror_mansion": "캐스터의 반사경",
+  "item.magicmirror.magic_mirror_library": "사서의 돋보기",
+
+  "item.magicmirror.dimensional_mirror": "차원용 거울",
+  "item.magicmirror.dimensional_mirror_ice": "설인의 거울 (차원용)",
+  "item.magicmirror.dimensional_mirror_jungle": "자연의 반사경 (차원용)",
+  "item.magicmirror.dimensional_mirror_desert": "파라오의 거울 (차원용)",
+  "item.magicmirror.dimensional_mirror_ocean": "해신의 거울 (차원용)",
+  "item.magicmirror.dimensional_mirror_cartographer": "지도 제작자의 검경 (차원용)",
+  "item.magicmirror.dimensional_mirror_mansion": "캐스터의 반사경 (차원용)",
+  "item.magicmirror.dimensional_mirror_library": "사서의 돋보기 (차원용)",
+  "item.magicmirror.dimensional_mirror_end": "반사 용석",
+
+  "item.magicmirror.dimension_crystal": "차원 수정",
+  "item.magicmirror.mirror_frame": "거울 틀",
+  "item.magicmirror.enchanted_mirror": "마법이 부여된 거울",
+  "item.magicmirror.broken_mirror": "부서진 거울",
+  "item.magicmirror.broken_mirror_dimensional": "부서진 차원용 거울",
+
+
+  "chat.magicmirror.bednotfound": "침대를 찾을 수 없습니다! 거울을 사용하기 전에 반드시 침대에서 자도록 하세요!",
+  "chat.magicmirror.power": "이 거울은 입체 여행을 하기에 충분히 강력하지 않아요!",
+  "chat.magicmirror.nether": "이 거울은 네더를 통과할 만큼 강력하지 않아요!",
+  "chat.magicmirror.dimension": "오버월드로 건너뛰는 중...",
+  "chat.magicmirror.teleport": "침대로 순간이동 중...",
+  "chat.magicmirror.isriding": "순간이동을 하려면 먼저 내려야 합니다!",
+
+  "magicmirror.config.recipe_mirror": "마법 거울 조합법을 활성화해야 합니까?",
+  "magicmirror.config.recipe_dim": "차원 거울 조합법을 활성화해야 합니까?",
+
+  "codenamerevy.config.logging": "내부 로깅을 사용합니다. 이것은 내부적으로 사용하는 것으로는 권장되지 않습니다.",
+
+  "subtitle.magicmirror.teleport": "순간이동",
+  "subtitle.magicmirror.mirror_discharge": "거울 방전",
+
+  "itemGroup.magic_mirrors": "마법 거울"
+}
