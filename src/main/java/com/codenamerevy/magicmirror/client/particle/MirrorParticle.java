@@ -10,6 +10,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.Random;
 
+@SuppressWarnings("ALL")
 public class MirrorParticle extends SpriteTexturedParticle
 {
     private static final Random RAND = new Random();
@@ -75,7 +76,7 @@ public class MirrorParticle extends SpriteTexturedParticle
 
     @OnlyIn(Dist.CLIENT)
     public static class Factory implements IParticleFactory<BasicParticleType> {
-        private IAnimatedSprite animatedSprite;
+        private final IAnimatedSprite animatedSprite;
 
         public Factory(IAnimatedSprite animatedSprite) {
             this.animatedSprite = animatedSprite;

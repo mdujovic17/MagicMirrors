@@ -1,6 +1,6 @@
 license="MIT License"
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[36,)"
 issueTrackerURL="https://github.com/CodenameRevy/MagicMirrors/issues"
 
 [[mods]]
