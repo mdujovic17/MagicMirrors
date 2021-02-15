@@ -1,16 +1,11 @@
 package com.codenamerevy.magicmirror;
 
-import com.codenamerevy.magicmirror.client.particle.MirrorParticle;
 import com.codenamerevy.magicmirror.client.particle.ParticleHandler;
 import com.codenamerevy.magicmirror.config.Config;
 import com.codenamerevy.magicmirror.init.ItemInit;
 import com.codenamerevy.magicmirror.init.ParticleInit;
 import com.codenamerevy.magicmirror.init.SoundInit;
-import com.codenamerevy.magicmirror.tabs.MirrorsItemGroup;
 import com.codenamerevy.magicmirror.util.handler.*;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.particle.IAnimatedSprite;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,15 +18,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.awt.*;
-
 @Mod(MagicMirror.MODID)
 public class MagicMirror
 {
     public static final String MODID = "magicmirror";
     public static final Logger LOGGER = LogManager.getLogger();
-
-    public static final ItemGroup MAGIC_MIRRORS = new MirrorsItemGroup("magic_mirrors");
 
     public MagicMirror()
     {
