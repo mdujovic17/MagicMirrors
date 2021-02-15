@@ -1,7 +1,7 @@
 package com.codenamerevy.magicmirror.content.items;
 
+import com.codenamerevy.magicmirror.MagicMirror;
 import com.codenamerevy.magicmirror.config.Config;
-import com.codenamerevy.magicmirror.util.Ref;
 import com.google.gson.JsonObject;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.crafting.conditions.ICondition;
@@ -9,7 +9,7 @@ import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
 
 public class ItemConditions implements ICondition
 {
-    public static final ResourceLocation NAME = new ResourceLocation(Ref.MODID, "items");
+    public static final ResourceLocation NAME = new ResourceLocation(MagicMirror.MODID, "items");
     public static String object;
 
     public ItemConditions (String object)

@@ -12,6 +12,6 @@ public class MirrorsItemGroup extends ItemGroup
 
     @Override
     public ItemStack createIcon() {
-        return new ItemStack(ItemInit.MAGIC_MIRROR);
+        return new ItemStack(ItemInit.MAGIC_MIRROR.get());
     }
 }

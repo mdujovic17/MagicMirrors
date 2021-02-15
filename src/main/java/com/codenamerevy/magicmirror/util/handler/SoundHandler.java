@@ -1,7 +1,6 @@
 package com.codenamerevy.magicmirror.util.handler;
 
-import com.codenamerevy.magicmirror.config.Config;
-import com.codenamerevy.magicmirror.util.Ref;
+import com.codenamerevy.magicmirror.MagicMirror;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -20,14 +19,11 @@ public class SoundHandler
     {
         TELEPORT = registerSound("teleport");
         MIRROR_DISCHARGE = registerSound("mirror_discharge");
-        if (Config.CategoryDeveloper.enableLogger.get()) {
-            Ref.LOGGER.info("Registered sound(s)!");
-        }
     }
 
     private static SoundEvent registerSound(String name)
     {
-        ResourceLocation location = new ResourceLocation(Ref.MODID, name);
+        ResourceLocation location = new ResourceLocation(MagicMirror.MODID, name);
         SoundEvent event = new SoundEvent(location);
         event.setRegistryName(location);
         ForgeRegistries.SOUND_EVENTS.register(event);

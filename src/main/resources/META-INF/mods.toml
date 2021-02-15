@@ -1,3 +1,4 @@
+license="MIT License"
 modLoader="javafml"
 loaderVersion="[31,)"
 issueTrackerURL="https://github.com/CodenameRevy/MagicMirrors/issues"
@@ -6,7 +7,7 @@ issueTrackerURL="https://github.com/CodenameRevy/MagicMirrors/issues"
 modId="magicmirror"
 version="${file.jarVersion}"
 displayName="Magic Mirrors"
-displayURL="https://github.com/CodenameRevy/MagicMirrors"
+displayURL="codenamerevy.github.io"
 logoFile="logo.png"
 credits='''
 CodenameRevy (Mod developer),
@@ -21,13 +22,13 @@ Magic Mirror mod adds several new items that are used to teleport you to your be
 [[dependencies.magicmirror]]
     modId="forge"
     mandatory=true
-    versionRange="[31,)"
+    versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.magicmirror]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"

@@ -1,6 +1,6 @@
 package com.codenamerevy.magicmirror.config;
 
-import com.codenamerevy.magicmirror.util.Ref;
+import com.codenamerevy.magicmirror.MagicMirror;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.Builder;
 
@@ -64,11 +64,11 @@ public class Config {
 
     @SubscribeEvent
     public static void onLoad(final ModConfig.Loading configEvent) {
-        Ref.LOGGER.debug(FORGEMOD, "Loaded {} config file {}", Ref.MODID, configEvent.getConfig().getFileName());
+        MagicMirror.LOGGER.debug(FORGEMOD, "Loaded {} config file {}", MagicMirror.MODID, configEvent.getConfig().getFileName());
     }
 
     @SubscribeEvent
     public static void onFileChange(final ModConfig.Reloading configEvent) {
-        Ref.LOGGER.fatal(CORE, "{} config just got changed on the file system!", Ref.MODID);
+        MagicMirror.LOGGER.fatal(CORE, "{} config just got changed on the file system!", MagicMirror.MODID);
     }
 }

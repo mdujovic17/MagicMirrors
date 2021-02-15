@@ -1,12 +1,14 @@
 package com.codenamerevy.magicmirror.particle;
 
 import net.minecraft.client.particle.*;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particles.BasicParticleType;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+import javax.annotation.Nullable;
 import java.util.Random;
 
 public class MirrorParticle extends SpriteTexturedParticle
@@ -14,7 +16,7 @@ public class MirrorParticle extends SpriteTexturedParticle
     private static final Random RAND = new Random();
     protected final IAnimatedSprite animatedSprite;
 
-    private MirrorParticle(IAnimatedSprite animatedSprite, World world, double x, double y, double z, double speedX, double speedY, double speedZ) {
+    private MirrorParticle(IAnimatedSprite animatedSprite, ClientWorld world, double x, double y, double z, double speedX, double speedY, double speedZ) {
         super(world, x, y, z, 0.5D - RAND.nextDouble(), speedY, 0.5D - RAND.nextDouble());
         this.animatedSprite = animatedSprite;
         this.motionY *= 0.15D;
@@ -80,8 +82,9 @@ public class MirrorParticle extends SpriteTexturedParticle
             this.animatedSprite = animatedSprite;
         }
 
+        @Nullable
         @Override
-        public Particle makeParticle(BasicParticleType type, World world, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
+        public Particle makeParticle(BasicParticleType type, ClientWorld world, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
             return new MirrorParticle(this.animatedSprite, world, x, y, z, xSpeed, ySpeed, zSpeed);
         }
     }
