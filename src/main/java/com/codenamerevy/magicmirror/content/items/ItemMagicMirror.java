@@ -3,6 +3,7 @@ package com.codenamerevy.magicmirror.content.items;
 import com.codenamerevy.magicmirror.init.ParticleInit;
 import com.codenamerevy.magicmirror.init.SoundInit;
 import com.codenamerevy.magicmirror.util.SpawnWarp;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -35,7 +36,7 @@ public class ItemMagicMirror extends Item {
     {
         Random rand = entity.world.rand;
         for(int a = 0; a < 25; a++) {
-            entity.world.addParticle(ParticleInit.MIRROR_PARTICLE, entity.lastTickPosX + (rand.nextBoolean() ? -0.5 : 0.5) * Math.pow(rand.nextFloat(), 2) * 2, entity.lastTickPosY + rand.nextFloat() * 3 - 2, entity.lastTickPosZ + (rand.nextBoolean() ? -0.5 : 0.5) * Math.pow(rand.nextFloat(), 2) * 2, -1, -0.105D, -1);
+            entity.world.addParticle(ParticleInit.MIRROR_PARTICLE.get(), entity.lastTickPosX + (rand.nextBoolean() ? -0.5 : 0.5) * Math.pow(rand.nextFloat(), 2) * 2, entity.lastTickPosY + rand.nextFloat() * 3 - 2, entity.lastTickPosZ + (rand.nextBoolean() ? -0.5 : 0.5) * Math.pow(rand.nextFloat(), 2) * 2, -1, -0.105D, -1);
         }
     }
 
@@ -54,40 +55,18 @@ public class ItemMagicMirror extends Item {
         {
             if (world.getDimensionKey() == spawnWorldKey) {
                 SpawnWarp.setPosAndUpdate(player, world, spawnPos);
-                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.TELEPORT, SoundCategory.PLAYERS, 1f, 1f);
+                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.TELEPORT.get(), SoundCategory.PLAYERS, 1f, 1f);
             }
             else {
                 player.sendStatusMessage(new TranslationTextComponent("info.magicmirror.power"), true);
-                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
+                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE.get(), SoundCategory.PLAYERS, 1f, 1f);
             }
         }
         else
         {
-            player.sendStatusMessage(new TranslationTextComponent("info.equinox.spawnNotFound"), true);
-            world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
-            return super.onItemUseFinish(stack, world, entity);
+            player.sendStatusMessage(new TranslationTextComponent("info.magicmirror.spawnNotFound"), true);
+            world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE.get(), SoundCategory.PLAYERS, 1f, 1f);
         }
-//        {
-//            PlayerEntity player = (PlayerEntity) entity;
-//            BlockPos bedPos = player.getBedLocation(player.dimension);
-//            BlockPos backPos = bedPos;
-//            BlockPos currentPos = player.getPosition();
-//
-//            if(!world.dimension.isSurfaceWorld())
-//            {
-//                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
-//                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.power"), true);
-//                return stack;
-//            }
-//            if (bedPos == null)
-//            {
-//                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
-//                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
-//                return stack;
-//            }
-//
-//            TeleportHelper.setPositionAndUpdate(entity, world, bedPos);
-//        }
         return super.onItemUseFinish(stack, world, entity);
     }
 

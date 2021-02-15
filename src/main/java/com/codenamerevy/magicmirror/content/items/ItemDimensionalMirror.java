@@ -39,34 +39,14 @@ public class ItemDimensionalMirror extends ItemMagicMirror
             else {
                 SpawnWarp.setPosAndUpdate(player, world, spawnPos);
             }
-            world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.TELEPORT, SoundCategory.PLAYERS, 1f, 1f);
+            world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.TELEPORT.get(), SoundCategory.PLAYERS, 1f, 1f);
+
         }
         else
         {
-            player.sendStatusMessage(new TranslationTextComponent("info.equinox.spawnNotFound"), true);
-            world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
+            player.sendStatusMessage(new TranslationTextComponent("info.magicmirror.spawnNotFound"), true);
+            world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE.get(), SoundCategory.PLAYERS, 1f, 1f);
         }
-//        if(!world.isRemote())
-//        {
-//            player = (ServerPlayerEntity) entity;
-//            currentPos = player.getPosition();
-//
-//            if(world.getDimension().getType() != DimensionType.OVERWORLD)
-//            {
-//                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.dimension"), true);
-//                TeleportHelper.travelHome(player);
-//            }
-//
-//            bedPos = player.getBedLocation(player.dimension);
-//
-//            if (bedPos == null) {
-//                world.playSound(null, currentPos.getX(), currentPos.getY(), currentPos.getZ(), SoundInit.MIRROR_DISCHARGE, SoundCategory.PLAYERS, 1f, 1f);
-//                player.sendStatusMessage(new TranslationTextComponent("chat.magicmirror.bednotfound"), true);
-//                return stack;
-//            }
-//            TeleportHelper.setPositionAndUpdate(entity, world, bedPos);
-//        }
-//        return stack;
         return super.onItemUseFinish(stack, world, entity);
     }
 

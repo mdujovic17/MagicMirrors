@@ -2,16 +2,15 @@ package com.codenamerevy.magicmirror.init;
 
 import com.codenamerevy.magicmirror.MagicMirror;
 import net.minecraft.particles.BasicParticleType;
+import net.minecraft.particles.ParticleType;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 
-@ObjectHolder(MagicMirror.MODID)
 public class ParticleInit
 {
-    public static final BasicParticleType MIRROR_PARTICLE = createBasicParticleType(false, "mirror_particle");
+    public static final DeferredRegister<ParticleType<?>> PARTICLES = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, MagicMirror.MODID);
 
-    private static BasicParticleType createBasicParticleType(boolean alwaysShow, String name) {
-        BasicParticleType particleType = new BasicParticleType(alwaysShow);
-        particleType.setRegistryName(MagicMirror.MODID, name);
-        return particleType;
-    }
+    public static final RegistryObject<BasicParticleType> MIRROR_PARTICLE = PARTICLES.register("mirror_particle", () -> new BasicParticleType(false));
 }
