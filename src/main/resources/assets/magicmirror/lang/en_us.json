@@ -8,17 +8,8 @@
   "item.magicmirror.enchanted_mirror": "Enchanted Mirror",
 
 
-  "info.magicmirror.bednotfound": "Bed not found! Make sure you sleep in the bed before you can use the mirror!",
+  "info.magicmirror.spawnNotFound": "Spawn point not found!",
   "info.magicmirror.power": "This mirror is not powerful enough for cross-dimensional travel!",
-  "info.magicmirror.nether": "This mirror is not powerful enough to travel through Nether!",
-  "info.magicmirror.dimension": "Jumping to Overworld...",
-  "info.magicmirror.teleport": "Teleporting to your bed...",
-  "info.magicmirror.isriding": "You have to dismount before you can teleport!",
-
-  "magicmirror.config.recipe_mirror": "Should Magic Mirror recipe be enabled?",
-  "magicmirror.config.recipe_dim": "Should Dimensional Mirrors recipes be enabled?",
-
-  "codenamerevy.config.logging": "Enable Internal Logging. This is not advised as its used internally.",
 
   "subtitle.magicmirror.teleport": "Teleport",
   "subtitle.magicmirror.mirror_discharge": "Mirror Discharge",

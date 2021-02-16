@@ -23,6 +23,7 @@
   "item.magicmirror.enchanted_mirror": "Espelho Encantado",
   "item.magicmirror.broken_mirror": "Espelho Quebrado",
   "item.magicmirror.broken_mirror_dimensional": "Espelho Dimensional Quebrado",
+  "chat.magicmirror.isriding": "Você tem que desmontar antes de se teletransportar!",
 
 
   "chat.magicmirror.bednotfound": "Cama não encontrada! Durma antes de poder usar o espelho!",
@@ -35,7 +36,7 @@
   "magicmirror.config.recipe_dim": "As receitas de 'Espelhos Dimensionais' devem ser ativadas?",
 
   "codenamerevy.config.logging": "Ativar log interno. Isso não é recomendado, pois é usado internamente.",
-  
+
   "subtitle.magicmirror.teleport": "Teleporte",
   "subtitle.magicmirror.mirror_discharge": "Descarga de Espelho",
 

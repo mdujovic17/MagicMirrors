@@ -1,10 +1,4 @@
 {
-  "conditions": [
-    {
-      "type": "magicmirror:items",
-      "object": "ingredients"
-    }
-  ],
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
@@ -16,11 +10,11 @@
   {
     "I":
     {
-      "item": "minecraft:iron_nugget"
+      "tag": "forge:nuggets/iron"
     },
     "N":
     {
-      "item": "minecraft:iron_ingot"
+      "tag": "forge:ingots/iron"
     }
   },
   "result":

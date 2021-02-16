@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_soil"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result":
+  {
+    "item": "magicmirror:dimension_crystal",
+    "count": 1
+  }
+}

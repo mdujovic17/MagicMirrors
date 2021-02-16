@@ -1,16 +1,10 @@
 {
-  "conditions": [
-    {
-      "type": "magicmirror:items",
-      "object": "ingredients"
-    }
-  ],
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "QGQ",
-    "QNQ",
-    "QGQ"
+    "EI ",
+    "IGI",
+    " IE"
   ],
   "key":
   {
@@ -18,17 +12,13 @@
     {
       "item": "minecraft:glass_pane"
     },
-    "N":
+    "I":
     {
-      "item": "minecraft:nether_star"
+      "tag": "forge:nuggets/iron"
     },
-    "G":
+    "E":
     {
-      "item": "minecraft:glass_pane"
-    },
-    "Q":
-    {
-      "item": "minecraft:quartz"
+      "item": "minecraft:ender_eye"
     }
   },
   "result":

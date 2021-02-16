@@ -1,8 +1,8 @@
 {
-  "teleport": {
+  "mirror_warp": {
     "category": "player",
     "subtitle": "subtitle.magicmirror.teleport",
-    "sounds": [ "magicmirror:teleport" ]
+    "sounds": [ "magicmirror:mirror_warp" ]
   },
   "mirror_discharge": {
     "category": "player,",
